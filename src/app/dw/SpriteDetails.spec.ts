@@ -8,6 +8,12 @@ describe('getSpriteDetailConfig', () => {
         expect(detail?.label).toBe('warrior');
     });
 
+    it('returns a mage detail for mage heroes', () => {
+        const detail = getSpriteDetailConfig('hero', { classId: 'mage', raceId: 'human' });
+        expect(detail?.badge).toBe('spark');
+        expect(detail?.label).toBe('mage');
+    });
+
     it('returns a merchant detail for NPC types', () => {
         const detail = getSpriteDetailConfig('npc', { type: 'MERCHANT_GREEN' });
         expect(detail?.badge).toBe('coin');
