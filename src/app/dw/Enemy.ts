@@ -4,6 +4,7 @@ import { RoamingEntity } from './RoamingEntity';
 import { getEnemyAi, EnemyAiFunc } from './EnemyAI';
 import { Hero } from './Hero';
 import { DwGame } from './DwGame';
+import { getSpriteDetailConfig } from './SpriteDetails';
 
 export interface EnemyData {
     name: string;
@@ -134,6 +135,13 @@ export class Enemy extends BattleEntity {
 
     getImage(hit: boolean): Image {
         return this.game.assets.get(hit ? this.damagedImage : this.image);
+    }
+
+    getDetailConfig() {
+        return getSpriteDetailConfig('enemy', {
+            rank: this.rank,
+            monsterClass: this.monsterClass,
+        });
     }
 
     prepare() {

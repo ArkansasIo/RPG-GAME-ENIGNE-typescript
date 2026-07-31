@@ -9,12 +9,16 @@ import { Enemy } from './Enemy';
 import { DwGame } from './DwGame';
 import { healSpell, hurtSpell, Spell } from '@/app/dw/Spell';
 import { CombatStats, createDefaultCombatStats, getEffectiveAttribute, getEffectiveSubAttribute } from '@/app/dw/CombatStats';
+import { Equipment } from './Equipment';
+import { getSpriteDetailConfig } from './SpriteDetails';
 
 export interface PartyMemberArgs extends RoamingEntityArgs {
     hp?: number;
     maxHp?: number;
     mp?: number;
     maxMp?: number;
+    raceId?: string;
+    classId?: string;
 }
 
 export class PartyMember extends RoamingEntity {
@@ -27,11 +31,14 @@ export class PartyMember extends RoamingEntity {
     exp: number;
     strength: number;
     agility: number;
+    raceId: string;
+    classId: string;
     weapon?: Weapon;
     armor?: Armor;
     shield?: Shield;
     readonly spells: Spell[];
     readonly combatStats: CombatStats;
+    readonly equipment: Equipment;
 
     constructor(game: DwGame, args: PartyMemberArgs) {
 
@@ -39,6 +46,8 @@ export class PartyMember extends RoamingEntity {
         this.level = 1;
         this.exp = 12345;
 
+        this.raceId = args.raceId ?? 'human';
+        this.classId = args.classId ?? 'warrior';
         this.strength = 4;
         //this.defense = 10;
         this.agility = 4;
@@ -50,6 +59,7 @@ export class PartyMember extends RoamingEntity {
 
         this.spells = [ healSpell, hurtSpell ];
         this.combatStats = createDefaultCombatStats();
+        this.equipment = new Equipment();
 
         //BattleEntity.call(this, args); // TODO: Better way to do a mixin?
         //Utils.mixin(RoamingEntityMixin.prototype, this);
@@ -158,6 +168,19 @@ export class PartyMember extends RoamingEntity {
         const y: number = (this.game.canvas.height - tileSize) / 2;
         const spriteSheet: SpriteSheet = this.game.assets.get('hero');
         spriteSheet.drawSprite(ctx, x, y, ssRow, ssCol);
+
+        const detail = getSpriteDetailConfig('hero', { classId: this.classId, raceId: this.raceId });
+        if (detail) {
+            ctx.save();
+            ctx.fillStyle = detail.tint;
+            ctx.strokeStyle = detail.accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(x + tileSize - 5, y + 4, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore();
+        }
 
     }
 

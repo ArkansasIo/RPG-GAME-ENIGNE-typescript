@@ -4,6 +4,7 @@ import { Direction } from './Direction';
 import { Hero } from './Hero';
 import { NpcType, getNpcSpriteRow } from './NpcType';
 import { DwGame } from './DwGame';
+import { getSpriteDetailConfig } from './SpriteDetails';
 
 type DirFunctionType = () => void;
 
@@ -81,6 +82,19 @@ export class Npc extends RoamingEntity {
         y += this.yOffs;
         ssCol += Hero.stepInc;
         ss.drawSprite(ctx, x, y, ssRow, ssCol);
+
+        const detail = getSpriteDetailConfig('npc', { type: this.type });
+        if (detail) {
+            ctx.save();
+            ctx.fillStyle = detail.tint;
+            ctx.strokeStyle = detail.accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(x + 12, y + 2, 3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.stroke();
+            ctx.restore();
+        }
     }
 
     reset() {

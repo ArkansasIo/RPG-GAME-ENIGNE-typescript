@@ -5,6 +5,7 @@ import { DwGame } from './DwGame';
 import { PartyMember } from './PartyMember';
 import { Inventory } from './Inventory';
 import { Item } from './Item';
+import { Equipment } from './Equipment';
 
 export class Party {
 
@@ -12,11 +13,13 @@ export class Party {
 
     private readonly members: PartyMember[];
     private readonly inventory: Inventory;
+    private readonly equipment: Equipment;
     gold: number;
 
     constructor(game: DwGame) {
         this.members = [];
         this.inventory = new Inventory();
+        this.equipment = new Equipment();
         this.gold = 0;
     }
 
@@ -68,6 +71,10 @@ export class Party {
      */
     getInventory(): Inventory {
         return this.inventory;
+    }
+
+    getEquipment(): Equipment {
+        return this.equipment;
     }
 
     /**

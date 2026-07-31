@@ -42,6 +42,8 @@ export interface AdventureLog {
     modifiedAt: string;
     hero: {
         name: string;
+        raceId: string;
+        classId: string;
         hp: number;
         mp: number;
         maxHp: number;
@@ -78,6 +80,8 @@ export const createNewAdventureLog = (): AdventureLog => {
         modifiedAt: now,
         hero: {
             name: 'Erdrick',
+            raceId: 'human',
+            classId: 'warrior',
             hp: 15,
             mp: 15,
             maxHp: 15,

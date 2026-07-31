@@ -214,6 +214,19 @@ Thy gold increases by ${this.enemy.gp}.`;
             y += battleBG.height - tileSize / 2 - enemyImg.height;
             enemyImg.draw(ctx, x, y);
 
+            const detail = this.enemy.getDetailConfig();
+            if (detail) {
+                ctx.save();
+                ctx.fillStyle = detail.tint;
+                ctx.strokeStyle = detail.accent;
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.arc(x + enemyImg.width - 8, y + 8, 6, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.stroke();
+                ctx.restore();
+            }
+
             if (!this.commandExecuting) {
                 if (this.textBubble?.isDone()) {
                     this.commandBubble.paint(ctx);

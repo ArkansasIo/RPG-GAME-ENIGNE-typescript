@@ -50,6 +50,7 @@ import { HERB, Item, getItemByName } from '@/app/dw/Item';
 import { HiddenItem, HiddenItemType } from '@/app/dw/HiddenItem';
 import { Kol } from '@/app/dw/mapLogic/kol';
 import { ColoredTextSpan } from '@/app/dw/Bubble';
+import { createDefaultCharacterCreationState, CharacterCreationState, getCharacterCreationSummary } from './CharacterCreation';
 
 
 export type TiledMapMap = Record<string, DwMap>;
@@ -62,6 +63,7 @@ export class DwGame extends Game {
     party: Party;
     npcs: Npc[] = [];
     private adventureLog = createNewAdventureLog();
+    private characterCreation = createDefaultCharacterCreationState();
     private bumpSoundDelay = 0;
     private readonly mapLogics = new Map<string, MapLogic>();
     private randomEncounters = true;
@@ -75,7 +77,7 @@ export class DwGame extends Game {
         super(args);
 
         // Create and initialize party
-        this.hero = new Hero(this, { name: 'Erdrick' });
+        this.hero = new Hero(this, { name: this.characterCreation.name, raceId: this.characterCreation.raceId, classId: this.characterCreation.classId });
         this.party = new Party(this);
         this.party.addMember(this.hero);
     }
@@ -294,6 +296,8 @@ export class DwGame extends Game {
     private initHeroFromAdventureLog() {
         const hero: Hero = this.hero;
         const log = this.adventureLog.hero;
+        hero.raceId = log.raceId ?? this.characterCreation.raceId;
+        hero.classId = log.classId ?? this.characterCreation.classId;
         hero.hp = log.hp;
         hero.maxHp = log.maxHp;
         hero.mp = log.mp;
@@ -393,6 +397,8 @@ export class DwGame extends Game {
         const log = this.adventureLog;
         const hero = this.hero;
 
+        log.hero.raceId = hero.raceId;
+        log.hero.classId = hero.classId;
         log.hero.hp = hero.hp;
         log.hero.maxHp = hero.maxHp;
         log.hero.mp = hero.mp;
@@ -610,8 +616,21 @@ export class DwGame extends Game {
         this.cameraDy = dy;
     }
 
+    setCharacterCreation(state: CharacterCreationState) {
+        this.characterCreation = state;
+        this.hero.name = state.name;
+        this.hero.raceId = state.raceId;
+        this.hero.classId = state.classId;
+        this.setStatusMessage(getCharacterCreationSummary(state));
+    }
+
     startNewGame() {
-        this.loadAdventureLog();
+        const newLog = createNewAdventureLog();
+        newLog.hero.name = this.characterCreation.name;
+        newLog.hero.raceId = this.characterCreation.raceId;
+        newLog.hero.classId = this.characterCreation.classId;
+        this.adventureLog = newLog;
+        this.initHeroFromAdventureLog();
         this.transitionToGame();
     }
 

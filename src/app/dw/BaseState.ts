@@ -1,5 +1,6 @@
 import { ImageUtils, InputManager, Keys, State } from 'gtp';
 import { DwGame } from './DwGame';
+import { getLevelProgressionSummary } from './World';
 
 /**
  * Functionality common amongst all states in this game.
@@ -105,6 +106,8 @@ export class BaseState extends State<DwGame> {
             game.setStatusMessage('Hero speed === 2');
         } else if (im.isKeyDown(Keys.KEY_E, true)) {
             game.toggleRandomEncounters();
+        } else if (im.isKeyDown(Keys.KEY_R, true)) {
+            game.setStatusMessage(getLevelProgressionSummary(1));
         }
     }
 }

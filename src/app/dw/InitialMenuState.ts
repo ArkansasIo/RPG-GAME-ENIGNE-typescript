@@ -3,8 +3,9 @@ import { DwGame } from './DwGame';
 import { ChoiceBubble } from './ChoiceBubble';
 import { createDefaultSettings, getDifficultyOptions, getMainMenuOptions, getMessageSpeedOptions, getOptionsMenuOptions, MenuSettingsState } from './MenuSettings';
 import { getMainQuests, getSideQuests } from './Quests';
+import { createDefaultCharacterCreationState, getClassOptions, getRaceOptions } from './CharacterCreation';
 
-type Substate = 'mainMenu' | 'saveSelect' | 'optionsMenu' | 'messageSpeedMenu' | 'difficultyMenu';
+type Substate = 'mainMenu' | 'saveSelect' | 'optionsMenu' | 'messageSpeedMenu' | 'difficultyMenu' | 'characterCreate' | 'raceSelect' | 'classSelect';
 
 /**
  * The initial menu shown to the user after pressing Enter on the title screen.
@@ -17,6 +18,10 @@ export class InitialMenuState extends BaseState {
     private settingsBubble: ChoiceBubble<string> | undefined;
     private substate: Substate;
     private settings: MenuSettingsState;
+    private characterState = createDefaultCharacterCreationState();
+    private characterBubble: ChoiceBubble<string> | undefined;
+    private raceBubble: ChoiceBubble<string> | undefined;
+    private classBubble: ChoiceBubble<string> | undefined;
 
     constructor(game: DwGame) {
         super(game);
@@ -90,6 +95,16 @@ export class InitialMenuState extends BaseState {
         return new ChoiceBubble(this.game, x, y, w, h, options, undefined, true);
     }
 
+    private createCharacterBubble(options: string[]): ChoiceBubble<string> {
+        const game: DwGame = this.game;
+        const tileSize: number = game.getTileSize();
+        const w: number = game.getWidth() - 4 * tileSize;
+        const h: number = 5 * tileSize;
+        const x: number = (game.getWidth() - w) / 2 + tileSize;
+        const y: number = (game.getHeight() - h) / 2;
+        return new ChoiceBubble(this.game, x, y, w, h, options, undefined, true);
+    }
+
     override enter() {
         super.enter();
         this.substate = 'mainMenu';
@@ -118,6 +133,11 @@ export class InitialMenuState extends BaseState {
                         this.substate = 'optionsMenu';
                         this.menuBubble.setActive(false);
                         this.optionsBubble = this.createOptionsBubble();
+                    } else if (2 === selection) { // Begin a new quest
+                        this.game.audio.playSound('menu');
+                        this.substate = 'characterCreate';
+                        this.menuBubble.setActive(false);
+                        this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
                     } else { // Nothing else is implemented
                         this.game.audio.playSound('missed1');
                     }
@@ -163,6 +183,65 @@ export class InitialMenuState extends BaseState {
                 }
                 break;
 
+            case 'characterCreate':
+                this.characterBubble!.update(delta);
+                if (this.characterBubble!.handleInput()) {
+                    const selection: number = this.characterBubble!.getSelectedIndex();
+                    if (-1 === selection) {
+                        this.substate = 'mainMenu';
+                        this.menuBubble.setActive(true);
+                    } else if (0 === selection) {
+                        this.characterState.name = 'Erdrick';
+                        this.game.setStatusMessage('Name set to Erdrick');
+                    } else if (1 === selection) {
+                        this.substate = 'raceSelect';
+                        this.raceBubble = this.createCharacterBubble(getRaceOptions().map((option) => option.label));
+                    } else if (2 === selection) {
+                        this.substate = 'classSelect';
+                        this.classBubble = this.createCharacterBubble(getClassOptions().map((option) => option.label));
+                    } else if (3 === selection) {
+                        this.game.setCharacterCreation(this.characterState);
+                        this.game.startNewGame();
+                    }
+                }
+                break;
+
+            case 'raceSelect':
+                this.raceBubble!.update(delta);
+                if (this.raceBubble!.handleInput()) {
+                    const selection: number = this.raceBubble!.getSelectedIndex();
+                    if (-1 === selection) {
+                        this.substate = 'characterCreate';
+                        this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
+                    } else {
+                        const race = getRaceOptions()[selection];
+                        if (race) {
+                            this.characterState.raceId = race.id;
+                        }
+                        this.substate = 'characterCreate';
+                        this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
+                    }
+                }
+                break;
+
+            case 'classSelect':
+                this.classBubble!.update(delta);
+                if (this.classBubble!.handleInput()) {
+                    const selection: number = this.classBubble!.getSelectedIndex();
+                    if (-1 === selection) {
+                        this.substate = 'characterCreate';
+                        this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
+                    } else {
+                        const characterClass = getClassOptions()[selection];
+                        if (characterClass) {
+                            this.characterState.classId = characterClass.id;
+                        }
+                        this.substate = 'characterCreate';
+                        this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
+                    }
+                }
+                break;
+
             case 'messageSpeedMenu':
             case 'difficultyMenu':
                 this.settingsBubble!.update(delta);
@@ -203,6 +282,12 @@ export class InitialMenuState extends BaseState {
             this.optionsBubble!.paint(ctx);
         } else if (this.substate === 'messageSpeedMenu' || this.substate === 'difficultyMenu') {
             this.settingsBubble!.paint(ctx);
+        } else if (this.substate === 'characterCreate') {
+            this.characterBubble!.paint(ctx);
+        } else if (this.substate === 'raceSelect') {
+            this.raceBubble!.paint(ctx);
+        } else if (this.substate === 'classSelect') {
+            this.classBubble!.paint(ctx);
         }
     }
 }

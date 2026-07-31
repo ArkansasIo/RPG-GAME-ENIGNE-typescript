@@ -1,10 +1,14 @@
 [
-  [ "Slime", "RedSlime" ],
-  [ "Slime", "RedSlime", "Drakee" ],
-  [ "Slime", "RedSlime", "Drakee", "Ghost" ],
-  [ "RedSlime", "Drakee", "Ghost", "Magician" ],
-  [ "Ghost", "Magician", "Magidrakee", "Scorpion" ],
-  [ "Ghost", "Magician", "Magidrakee", "Scorpion", "Skeleton" ],
-  [ "Magidrakee", "Scorpion", "Skeleton", "Warlock", "Wolf" ],
-  [ "Skeleton", "Warlock", "Wolf", "MetalScorpion" ]
+  [ "Slime", "RedSlime", "Mire Slime" ],
+  [ "Slime", "RedSlime", "Drakee", "Ash Drakee" ],
+  [ "Slime", "RedSlime", "Drakee", "Ghost", "Cinder Bat" ],
+  [ "RedSlime", "Drakee", "Ghost", "Magician", "Mudcrawler" ],
+  [ "Ghost", "Magician", "Magidrakee", "Scorpion", "Briar Lurker" ],
+  [ "Ghost", "Magician", "Magidrakee", "Scorpion", "Skeleton", "Shadow Mantis" ],
+  [ "Magidrakee", "Scorpion", "Skeleton", "Warlock", "Wolf", "Ravenous Wolf", "Magma Imp" ],
+  [ "Skeleton", "Warlock", "Wolf", "MetalScorpion", "Blight Hound", "Fang Spider" ],
+  [ "MetalScorpion", "Wolf", "MetalScorpion", "Ravenous Wolf", "Grim Reaper", "Obsidian Knight" ],
+  [ "Wraith", "Specter", "Frost Wraith", "Vortex Sprite", "Rune Warden" ],
+  [ "Wolflord", "Druinlord", "Drollmagi", "Cursed Sentinel", "Night Harrier" ],
+  [ "Wyvern", "WraithKnight", "Golem", "Stone Golem", "Razorback", "Ember Drake" ]
 ]
