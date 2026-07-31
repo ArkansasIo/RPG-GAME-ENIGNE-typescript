@@ -1,0 +1,19 @@
+{
+  "zoneId": 49,
+  "zoneCode": "ZONE_49",
+  "zoneName": "Cinderlands",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_49/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_49/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_49/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_49/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_49/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_49/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_49/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_49/Data/MusicData.json"
+  }
+}

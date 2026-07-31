@@ -1,0 +1,19 @@
+{
+  "zoneId": 53,
+  "zoneCode": "ZONE_53",
+  "zoneName": "Moonshadow Swamp",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_53/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_53/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_53/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_53/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_53/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_53/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_53/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_53/Data/MusicData.json"
+  }
+}

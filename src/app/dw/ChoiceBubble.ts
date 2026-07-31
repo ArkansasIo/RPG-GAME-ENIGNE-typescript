@@ -49,6 +49,57 @@ export class ChoiceBubble<ChoiceBubbleChoice> extends Bubble {
         return this.curChoice > -1 ? this.choices[this.curChoice] : undefined;
     }
 
+    private getSelectionForPoint(x: number, y: number): number | undefined {
+        const contentX = this.x + this.getXMargin();
+        const contentY = this.y + this.getYMargin();
+
+        if (this.columns === 2) {
+            const leftCount = Math.ceil(this.choices.length / 2);
+            const colGap = this.game.getTileSize();
+            const contentWidth = this.w - 2 * this.getXMargin();
+            const colWidth = (contentWidth - colGap) / 2;
+
+            for (let index = 0; index < this.choices.length; index += 1) {
+                const inRight = index >= leftCount;
+                const row = inRight ? index - leftCount : index;
+                const textX = inRight ? contentX + colWidth + colGap : contentX;
+                const textY = contentY + row * this.yInc;
+                const width = this.game.stringWidth(this.choiceStringifier(this.choices[index], Math.floor(contentWidth / this.game.stringWidth('x')))) + 4 * this.game.scale;
+                const height = this.yInc + 2 * this.game.scale;
+
+                if (x >= textX && x <= textX + width && y >= textY && y <= textY + height) {
+                    return index;
+                }
+            }
+            return undefined;
+        }
+
+        for (let index = 0; index < this.choices.length; index += 1) {
+            const textY = contentY + index * this.yInc;
+            const width = this.game.stringWidth(this.choiceStringifier(this.choices[index], Math.floor((this.w - 2 * this.getXMargin()) / this.game.stringWidth('x')))) + 4 * this.game.scale;
+            const height = this.yInc + 2 * this.game.scale;
+
+            if (x >= contentX && x <= contentX + width && y >= textY && y <= textY + height) {
+                return index;
+            }
+        }
+
+        return undefined;
+    }
+
+    handlePointerSelection(x: number, y: number): boolean {
+        const selection = this.getSelectionForPoint(x, y);
+        if (selection === undefined) {
+            if (this.cancellable) {
+                this.curChoice = -1;
+                return true;
+            }
+            return false;
+        }
+        this.curChoice = selection;
+        return true;
+    }
+
     /**
      * Allows this bubble to react to user input.
      *
@@ -57,6 +108,20 @@ export class ChoiceBubble<ChoiceBubbleChoice> extends Bubble {
     handleInput(): boolean {
 
         const im: InputManager = this.game.inputManager;
+
+        const pointerPosition = this.game.getPointerPosition();
+        if (pointerPosition) {
+            this.handlePointerSelection(pointerPosition.x, pointerPosition.y);
+        }
+
+        const pointerClick = this.game.consumePointerClick();
+        if (pointerClick) {
+            const handled = this.handlePointerSelection(pointerClick.x, pointerClick.y);
+            if (handled) {
+                this.game.audio.playSound('menu');
+                return true;
+            }
+        }
 
         if (this.game.cancelKeyPressed()) {
             if (this.cancellable) {

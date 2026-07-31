@@ -47,11 +47,9 @@ export const getNpcCatalog = (): NpcCatalogEntry[] => [
     { id: 'nerys', name: 'Nerys', profession: 'Ranger', title: 'Bracken Scout', location: 'Garinham', description: 'Moves quietly through thick brush and pine.' },
     { id: 'rowan', name: 'Rowan', profession: 'Alchemist', title: 'Bottlewright', location: 'Brecconary', description: 'Brews remedies from brookwater and ash leaf.' },
     { id: 'tess', name: 'Tess', profession: 'Bard', title: 'Hearth Singer', location: 'Kol', description: 'Sings the tales of old kings and forgotten roads.' },
-    { id: 'garr', name: 'Garr', profession: 'Mercenary', title: 'Ashen Hand', location: 'Overworld', description: 'Accepts caravan contracts and monster hunts.' },
     { id: 'lara', name: 'Lara', profession: 'Apothecary', title: 'Sunroot', location: 'Garinham', description: 'Dyes salves with bright herbs and old patience.' },
     { id: 'bran', name: 'Bran', profession: 'Blacksmith', title: 'Mithril Smith', location: 'Tantegel', description: 'Forges blades prized by adventurers.' },
     { id: 'ella', name: 'Ella', profession: 'Chef', title: 'Honey Spoon', location: 'Brecconary', description: 'Serves sweet bread and savory stew.' },
-    { id: 'oz', name: 'Oz', profession: 'Herbalist', title: 'Moss Cloak', location: 'Overworld', description: 'Collects herbs from the marshes at dawn.' },
 ];
 
 export const getNpcProfessions = () => getNpcProfessionsFromModule();

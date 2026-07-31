@@ -11,7 +11,7 @@ import { Direction } from '@/app/dw/Direction';
 
 const expectAdventureLogisForNewGame = (log: AdventureLog) => {
     expect(log.version).toBe(1);
-    expect(log.hero.name).toBe('Erdrick');
+    expect(log.hero.name).toBe('Erdr');
     expect(log.hero.hp).toBe(15);
     expect(log.hero.maxHp).toBe(15);
     expect(log.hero.mp).toBe(15);
@@ -60,7 +60,7 @@ describe('AdventureLog', () => {
 
         it('initializes hero at the default starting position', () => {
             const { hero } = createNewAdventureLog();
-            expect(hero.name).toBe('Erdrick');
+            expect(hero.name).toBe('Erdr');
             expect(hero.hp).toBe(15);
             expect(hero.maxHp).toBe(15);
             expect(hero.mp).toBe(15);

@@ -1,0 +1,19 @@
+{
+  "zoneId": 67,
+  "zoneCode": "ZONE_67",
+  "zoneName": "Shadowlands",
+  "biomeFamilyId": "otherworld",
+  "progressionBandId": "otherworld-endgame",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_67/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_67/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_67/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_67/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_67/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_67/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_67/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_67/Data/MusicData.json"
+  }
+}

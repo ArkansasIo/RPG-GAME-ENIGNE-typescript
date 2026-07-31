@@ -1,0 +1,19 @@
+{
+  "zoneId": 63,
+  "zoneCode": "ZONE_63",
+  "zoneName": "Goblin Warrens",
+  "biomeFamilyId": "underground",
+  "progressionBandId": "deep-underground",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_63/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_63/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_63/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_63/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_63/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_63/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_63/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_63/Data/MusicData.json"
+  }
+}

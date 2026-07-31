@@ -1,0 +1,76 @@
+{
+  "zoneId": 46,
+  "zoneCode": "ZONE_46",
+  "zoneName": "Frozen Dragonlands",
+  "biomeFamilyId": "frozen-regions",
+  "progressionBandId": "frozen-north",
+  "threatTier": 5,
+  "recommendedPartyLevel": {
+    "min": 25,
+    "max": 33
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Knight",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Magiwyvern",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "DemonKnight",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Knight",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Magiwyvern",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "DemonKnight",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "Magiwyvern",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "DemonKnight",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_46_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

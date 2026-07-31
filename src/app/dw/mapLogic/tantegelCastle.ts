@@ -4,15 +4,16 @@ import { Conversation } from '../Conversation';
 import { TitleScreenState } from '../TitleScreenState';
 import { AbstractMapLogic, NpcTextGeneratorMap } from './AbstractMapLogic';
 import { NpcText } from './MapLogic';
+import { getNpcDialogue } from '@/app/dw/Story';
 
 const talks: NpcTextGeneratorMap = {
 
     south_soldier_left: (game: DwGame) => {
-        return 'Welcome to Tantegel Castle.';
+        return [ 'Welcome to Tantegel Castle.', ...getNpcDialogue('guard') ];
     },
 
     south_soldier_right: (game: DwGame): NpcText => {
-        return 'Welcome to Tantegel Castle.';
+        return [ 'Welcome to Tantegel Castle.', ...getNpcDialogue('guard') ];
     },
 
     bottom_left_merchant_1: (game: DwGame): NpcText => {

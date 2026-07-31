@@ -1,0 +1,19 @@
+{
+  "zoneId": 69,
+  "zoneCode": "ZONE_69",
+  "zoneName": "Celestial Highlands",
+  "biomeFamilyId": "otherworld",
+  "progressionBandId": "otherworld-endgame",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_69/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_69/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_69/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_69/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_69/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_69/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_69/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_69/Data/MusicData.json"
+  }
+}

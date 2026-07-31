@@ -4,6 +4,7 @@ import { ChoiceBubble } from './ChoiceBubble';
 import { createDefaultSettings, getDifficultyOptions, getMainMenuOptions, getMessageSpeedOptions, getOptionsMenuOptions, MenuSettingsState } from './MenuSettings';
 import { getMainQuests, getSideQuests } from './Quests';
 import { createDefaultCharacterCreationState, getClassOptions, getRaceOptions } from './CharacterCreation';
+import { GameLogic } from './GameLogic';
 
 type Substate = 'mainMenu' | 'saveSelect' | 'optionsMenu' | 'messageSpeedMenu' | 'difficultyMenu' | 'characterCreate' | 'raceSelect' | 'classSelect';
 
@@ -123,22 +124,26 @@ export class InitialMenuState extends BaseState {
                 this.menuBubble.update(delta);
                 if (this.menuBubble.handleInput()) {
                     const selection: number = this.menuBubble.getSelectedIndex();
-                    if (0 === selection) { // Continue a game
+                    const mainOptions = getMainMenuOptions();
+                    const selectedOption = mainOptions[selection];
+                    if (!selectedOption) {
+                        this.game.audio.playSound('missed1');
+                    } else if (selectedOption.id === 'continue') {
                         this.game.audio.playSound('menu');
                         this.substate = 'saveSelect';
                         this.menuBubble.setActive(false);
                         this.saveSelectBubble = this.createSaveSelectBubble();
-                    } else if (1 === selection) { // Options
+                    } else if (selectedOption.id === 'options') {
                         this.game.audio.playSound('menu');
                         this.substate = 'optionsMenu';
                         this.menuBubble.setActive(false);
                         this.optionsBubble = this.createOptionsBubble();
-                    } else if (2 === selection) { // Begin a new quest
+                    } else if (selectedOption.id === 'newGame') {
                         this.game.audio.playSound('menu');
                         this.substate = 'characterCreate';
                         this.menuBubble.setActive(false);
                         this.characterBubble = this.createCharacterBubble([ 'NAME', 'RACE', 'CLASS', 'START' ]);
-                    } else { // Nothing else is implemented
+                    } else {
                         this.game.audio.playSound('missed1');
                     }
                 }
@@ -164,19 +169,24 @@ export class InitialMenuState extends BaseState {
                 this.optionsBubble!.update(delta);
                 if (this.optionsBubble!.handleInput()) {
                     const selection: number = this.optionsBubble!.getSelectedIndex();
-                    if (0 === selection) {
+                    const options = getOptionsMenuOptions();
+                    const selectedOption = options[selection];
+                    if (!selectedOption) {
+                        this.substate = 'mainMenu';
+                        this.menuBubble.setActive(true);
+                    } else if (selectedOption.id === 'sound') {
                         this.settings.sound = !this.settings.sound;
                         this.game.audio.playSound('menu');
-                    } else if (1 === selection) {
+                    } else if (selectedOption.id === 'music') {
                         this.settings.music = !this.settings.music;
                         this.game.audio.playSound('menu');
-                    } else if (2 === selection) {
+                    } else if (selectedOption.id === 'messageSpeed') {
                         this.substate = 'messageSpeedMenu';
                         this.settingsBubble = this.createSettingsBubble(getMessageSpeedOptions().map((option) => option.label));
-                    } else if (3 === selection) {
+                    } else if (selectedOption.id === 'difficulty') {
                         this.substate = 'difficultyMenu';
                         this.settingsBubble = this.createSettingsBubble(getDifficultyOptions().map((option) => option.label));
-                    } else if (4 === selection) {
+                    } else if (selectedOption.id === 'back') {
                         this.substate = 'mainMenu';
                         this.menuBubble.setActive(true);
                     }
@@ -191,8 +201,8 @@ export class InitialMenuState extends BaseState {
                         this.substate = 'mainMenu';
                         this.menuBubble.setActive(true);
                     } else if (0 === selection) {
-                        this.characterState.name = 'Erdrick';
-                        this.game.setStatusMessage('Name set to Erdrick');
+                        this.characterState.name = 'Erdr';
+                        this.game.setStatusMessage('Name set to Erdr');
                     } else if (1 === selection) {
                         this.substate = 'raceSelect';
                         this.raceBubble = this.createCharacterBubble(getRaceOptions().map((option) => option.label));
@@ -200,7 +210,9 @@ export class InitialMenuState extends BaseState {
                         this.substate = 'classSelect';
                         this.classBubble = this.createCharacterBubble(getClassOptions().map((option) => option.label));
                     } else if (3 === selection) {
+                        const summary = GameLogic.getChallengeSummary(this.game.hero.level);
                         this.game.setCharacterCreation(this.characterState);
+                        this.game.setStatusMessage(`Starting adventure: ${summary}`);
                         this.game.startNewGame();
                     }
                 }

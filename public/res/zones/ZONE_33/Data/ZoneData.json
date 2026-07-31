@@ -1,0 +1,19 @@
+{
+  "zoneId": 33,
+  "zoneCode": "ZONE_33",
+  "zoneName": "Azure Coast",
+  "biomeFamilyId": "coasts-and-oceans",
+  "progressionBandId": "oceanic-kingdoms",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_33/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_33/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_33/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_33/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_33/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_33/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_33/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_33/Data/MusicData.json"
+  }
+}

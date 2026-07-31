@@ -1,0 +1,19 @@
+{
+  "zoneId": 5,
+  "zoneCode": "ZONE_05",
+  "zoneName": "Sunflower Valley",
+  "biomeFamilyId": "plains",
+  "progressionBandId": "beginner-kingdom",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_05/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_05/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_05/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_05/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_05/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_05/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_05/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_05/Data/MusicData.json"
+  }
+}

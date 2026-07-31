@@ -5,6 +5,7 @@ import { BattleState } from '@/app/dw/BattleState';
 import { EnemyData } from '@/app/dw/Enemy';
 import { EnemyAiFunc } from '@/app/dw/EnemyAI';
 import { TextBubble } from '@/app/dw/TextBubble';
+import { HERB } from '@/app/dw/Item';
 
 const mockFont = {
     cellW: 8,
@@ -76,6 +77,47 @@ describe('BattleState', () => {
         it('advances to enemyAttackCallback after a 600ms delay', () => {
             battleState.update(700); // advance past the 600ms fire delay
             expect(playSoundSpy).toHaveBeenCalledWith('receiveDamage');
+        });
+    });
+
+    describe('item()', () => {
+        it('uses a herb from the inventory during battle', () => {
+            const hero = game.hero;
+            hero.hp = 3;
+            hero.maxHp = 20;
+            game.party.addInventoryItem(HERB);
+
+            battleState.item();
+
+            expect(game.party.getInventory().getItems()).toHaveLength(0);
+            expect(game.hero.hp).toBeGreaterThan(3);
+        });
+    });
+
+    describe('defeatedEnemy()', () => {
+        it('levels up the hero when battle experience crosses the next threshold', () => {
+            const hero = game.hero;
+            hero.level = 1;
+            hero.exp = 99;
+            hero.hp = 15;
+            hero.maxHp = 15;
+            hero.mp = 10;
+            hero.maxMp = 10;
+            hero.strength = 4;
+            hero.agility = 4;
+
+            battleState.getEnemy().xp = 5;
+            const enemy = battleState.getEnemy();
+            vi.spyOn(enemy, 'takeDamage').mockReturnValue(true);
+
+            battleState.fight();
+            battleState.update(400);
+            battleState.update(500);
+
+            expect(game.hero.exp).toBe(104);
+            expect(game.hero.level).toBe(2);
+            expect(game.hero.maxHp).toBe(20);
+            expect(game.hero.maxMp).toBe(12);
         });
     });
 

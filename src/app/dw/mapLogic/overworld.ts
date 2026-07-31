@@ -1,4 +1,5 @@
 import { DwGame } from '../DwGame';
+import { GameLogic } from '../GameLogic';
 import { AbstractMapLogic, NpcTextGeneratorMap } from './AbstractMapLogic';
 import { NpcText } from './MapLogic';
 
@@ -49,9 +50,20 @@ const talks: NpcTextGeneratorMap = {
         ];
     },
     Gatekeeper: (game: DwGame): NpcText => {
+        const questState = game.getAdventureLog().quests;
+        const isQuestReady = questState.activeQuestId === 'q1' && !questState.completedQuestIds.includes('q1');
         return [
             'The gate stays open only for the prepared.',
             'You may enter the wilds if you carry courage and supplies.',
+            ...(isQuestReady ? [{
+                text: 'The bell has been rung, and the road is safe once more.',
+                action: () => {
+                    const completed = GameLogic.completeQuest(game.getAdventureLog(), game.party, 'q1');
+                    if (completed) {
+                        game.setStatusMessage('Quest complete: The Ashen Bell');
+                    }
+                },
+            }] : []),
         ];
     },
 };
@@ -87,7 +99,8 @@ export class Overworld extends AbstractMapLogic {
             return undefined;
         }
 
-        const message = `Discovered ${region.name}: ${region.description}`;
+        const discovered = GameLogic.discoverRegion(game.getAdventureLog(), game.party, id);
+        const message = `Discovered ${region.name}: ${region.description}${discovered ? ' (+15 gold)' : ''}`;
         game.setStatusMessage(message);
         return message;
     }

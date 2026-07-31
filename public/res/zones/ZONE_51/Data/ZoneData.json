@@ -1,0 +1,19 @@
+{
+  "zoneId": 51,
+  "zoneCode": "ZONE_51",
+  "zoneName": "Inferno Caverns",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_51/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_51/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_51/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_51/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_51/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_51/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_51/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_51/Data/MusicData.json"
+  }
+}

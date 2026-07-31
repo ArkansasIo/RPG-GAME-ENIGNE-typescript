@@ -1,0 +1,19 @@
+{
+  "zoneId": 40,
+  "zoneCode": "ZONE_40",
+  "zoneName": "Sunken Coast",
+  "biomeFamilyId": "coasts-and-oceans",
+  "progressionBandId": "oceanic-kingdoms",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_40/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_40/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_40/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_40/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_40/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_40/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_40/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_40/Data/MusicData.json"
+  }
+}

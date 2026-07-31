@@ -31,13 +31,9 @@ export class Inventory {
     }
 
     remove(itemName: string): boolean {
-
         const item: Item | undefined = getItemByName(itemName);
-        if (!item) {
-            return false;
-        }
-
-        const index = this.items.indexOf(item);
+        const lookupName = item?.name ?? itemName;
+        const index = this.items.findIndex((inventoryItem) => inventoryItem.name === lookupName);
         if (index > -1) {
             this.items.splice(index, 1);
             return true;

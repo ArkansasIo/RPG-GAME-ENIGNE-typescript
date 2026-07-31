@@ -1,0 +1,310 @@
+{
+  "id": "dw-accessories-16x16-v1",
+  "title": "Accessory and Equipment Classes Split Sheet",
+  "spriteSize": 16,
+  "columns": 16,
+  "rows": 2,
+  "atlasPath": "res/sheets/accessories_16x16.png",
+  "entries": [
+    {
+      "spriteId": "dw.accessories.rings.ring-of-vigor.t01",
+      "groupId": "accessories",
+      "categoryId": "rings",
+      "classId": "ring-of-vigor",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.rings.ring-of-wisdom.t01",
+      "groupId": "accessories",
+      "categoryId": "rings",
+      "classId": "ring-of-wisdom",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.rings.ring-of-luck.t01",
+      "groupId": "accessories",
+      "categoryId": "rings",
+      "classId": "ring-of-luck",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.rings.ring-of-warding.t01",
+      "groupId": "accessories",
+      "categoryId": "rings",
+      "classId": "ring-of-warding",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.amulets.amulet-of-light.t01",
+      "groupId": "accessories",
+      "categoryId": "amulets",
+      "classId": "amulet-of-light",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.amulets.amulet-of-tides.t01",
+      "groupId": "accessories",
+      "categoryId": "amulets",
+      "classId": "amulet-of-tides",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.amulets.amulet-of-embers.t01",
+      "groupId": "accessories",
+      "categoryId": "amulets",
+      "classId": "amulet-of-embers",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.amulets.amulet-of-thunder.t01",
+      "groupId": "accessories",
+      "categoryId": "amulets",
+      "classId": "amulet-of-thunder",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 112,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.belts.belt-of-giant-might.t01",
+      "groupId": "accessories",
+      "categoryId": "belts",
+      "classId": "belt-of-giant-might",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.belts.belt-of-focus.t01",
+      "groupId": "accessories",
+      "categoryId": "belts",
+      "classId": "belt-of-focus",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.belts.belt-of-swiftness.t01",
+      "groupId": "accessories",
+      "categoryId": "belts",
+      "classId": "belt-of-swiftness",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.belts.belt-of-resolve.t01",
+      "groupId": "accessories",
+      "categoryId": "belts",
+      "classId": "belt-of-resolve",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 176,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.gloves.leather-gloves.t01",
+      "groupId": "accessories",
+      "categoryId": "gloves",
+      "classId": "leather-gloves",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.gloves.gauntlets-of-power.t01",
+      "groupId": "accessories",
+      "categoryId": "gloves",
+      "classId": "gauntlets-of-power",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 208,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.gloves.mage-gloves.t01",
+      "groupId": "accessories",
+      "categoryId": "gloves",
+      "classId": "mage-gloves",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 224,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.gloves.thief-gloves.t01",
+      "groupId": "accessories",
+      "categoryId": "gloves",
+      "classId": "thief-gloves",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.boots.traveler-boots.t01",
+      "groupId": "accessories",
+      "categoryId": "boots",
+      "classId": "traveler-boots",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.boots.iron-greaves.t01",
+      "groupId": "accessories",
+      "categoryId": "boots",
+      "classId": "iron-greaves",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.boots.winged-boots.t01",
+      "groupId": "accessories",
+      "categoryId": "boots",
+      "classId": "winged-boots",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.accessories.boots.shadow-boots.t01",
+      "groupId": "accessories",
+      "categoryId": "boots",
+      "classId": "shadow-boots",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    }
+  ]
+}

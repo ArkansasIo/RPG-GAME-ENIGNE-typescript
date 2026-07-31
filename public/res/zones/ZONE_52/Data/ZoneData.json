@@ -1,0 +1,19 @@
+{
+  "zoneId": 52,
+  "zoneCode": "ZONE_52",
+  "zoneName": "Dragonfire Caldera",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_52/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_52/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_52/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_52/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_52/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_52/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_52/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_52/Data/MusicData.json"
+  }
+}

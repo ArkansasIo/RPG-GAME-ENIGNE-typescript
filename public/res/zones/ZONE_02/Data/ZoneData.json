@@ -1,0 +1,19 @@
+{
+  "zoneId": 2,
+  "zoneCode": "ZONE_02",
+  "zoneName": "Greenheart Meadow",
+  "biomeFamilyId": "plains",
+  "progressionBandId": "beginner-kingdom",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_02/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_02/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_02/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_02/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_02/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_02/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_02/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_02/Data/MusicData.json"
+  }
+}

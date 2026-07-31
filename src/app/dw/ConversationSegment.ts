@@ -1,6 +1,7 @@
 import { Utils } from 'gtp';
 import { DwGame } from './DwGame';
 import { Conversation } from './Conversation';
+import { getDisplayHeroName } from './CharacterCreation';
 
 /**
  * Some conversations provide the user with a list of choices. These choices are
@@ -171,11 +172,11 @@ export class ConversationSegment implements ConversationSegmentArgs {
                 let itemCost: string;
                 switch (expression) {
                     case 'hero.name':
-                        text = text.substring(0, lbrace) + this.game.hero.name + text.substring(rbrace + 1);
-                        lbrace = text.indexOf('\\w{', lbrace + this.game.hero.name.length);
+                        text = text.substring(0, lbrace) + getDisplayHeroName(this.game.hero.name) + text.substring(rbrace + 1);
+                        lbrace = text.indexOf('\\w{', lbrace + getDisplayHeroName(this.game.hero.name).length);
                         break;
                     case 'hero.expRemaining':
-                        expRemaining = this.game.hero.exp.toString(); // TODO: Correct value
+                        expRemaining = this.game.hero.getExpRemainingToNextLevel().toString();
                         text = text.substring(0, lbrace) + expRemaining + text.substring(rbrace + 1);
                         lbrace = text.indexOf('\\w{', lbrace + expRemaining.length);
                         break;

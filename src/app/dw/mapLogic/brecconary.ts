@@ -1,15 +1,23 @@
 import { DwGame } from '../DwGame';
+import { GameLogic } from '../GameLogic';
 import { AbstractMapLogic, NpcTextGeneratorMap } from './AbstractMapLogic';
 import { NpcText } from './MapLogic';
+import { getNpcDialogue } from '@/app/dw/Story';
 
 const talks: NpcTextGeneratorMap = {
 
     greeter: (game: DwGame): NpcText => {
-        return 'Thou art most welcome in Brecconary.';
+        return [
+            'Thou art most welcome in Brecconary.',
+            ...getNpcDialogue('villager'),
+        ];
     },
 
     oldman1: (game: DwGame): NpcText => {
-        return 'Watch thy Hit Points when in the Poisonous Marsh.';
+        return [
+            'Watch thy Hit Points when in the Poisonous Marsh.',
+            ...getNpcDialogue('scholar'),
+        ];
     },
 
     woman_at_shop: (game: DwGame): NpcText => {
@@ -17,8 +25,11 @@ const talks: NpcTextGeneratorMap = {
     },
 
     soldier1: (game: DwGame): NpcText => {
-        return [ 'Many have been the warriors who have perished on this quest.',
-            'But for thee I wish success, \\w{hero.name}.' ];
+        return [
+            'Many have been the warriors who have perished on this quest.',
+            'But for thee I wish success, \w{hero.name}.',
+            ...getNpcDialogue('guard'),
+        ];
     },
 
     oldman_test: (game: DwGame): NpcText => {
@@ -34,6 +45,8 @@ const talks: NpcTextGeneratorMap = {
                     choices: [
                         { text: 'Yes', next: () => {
                             game.party.addGold(10);
+                            const accepted = GameLogic.acceptQuest(game.getAdventureLog(), 'q1');
+                            game.setStatusMessage(accepted ? 'Quest accepted: The Ashen Bell' : 'The bell is already under thy care.');
                             return 'iGaveYouMoney';
                         },
                         },

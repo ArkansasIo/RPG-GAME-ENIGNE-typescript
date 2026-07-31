@@ -2,7 +2,7 @@ import { Delay, Image, InputManager } from 'gtp';
 import { BaseState } from './BaseState';
 import { DwGame } from './DwGame';
 import { InitialMenuState } from './InitialMenuState';
-import { getStoryActs } from './Story';
+import { getPrologueText, getStoryActs } from './Story';
 import { getQuests } from './Quests';
 
 export class TitleScreenState extends BaseState {
@@ -86,6 +86,11 @@ export class TitleScreenState extends BaseState {
             x = (w - game.stringWidth(summary)) / 2;
             y = 270;
             game.drawString(summary, x, y);
+
+            const prologue = getPrologueText()[0];
+            x = (w - game.stringWidth(prologue)) / 2;
+            y = 300;
+            game.drawString(prologue, x, y);
         }
     }
 

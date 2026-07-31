@@ -1,0 +1,19 @@
+{
+  "zoneId": 57,
+  "zoneCode": "ZONE_57",
+  "zoneName": "Lizardfolk Marsh",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_57/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_57/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_57/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_57/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_57/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_57/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_57/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_57/Data/MusicData.json"
+  }
+}

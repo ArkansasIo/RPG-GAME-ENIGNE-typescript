@@ -32,7 +32,7 @@ export class GameStudioAdvertState extends BaseState {
         //         var y = 30;
         //         img.draw(ctx, x, y);
 
-        const prompt = 'OutOnBail Games Presents';
+        const prompt = 'Endgame Studio Presents';
         const x: number = (w - game.stringWidth(prompt)) / 2;
         const y: number = (game.getHeight() - game.stringHeight()) / 2;
         game.drawString(prompt, x, y);

@@ -19,17 +19,25 @@ export const createDefaultSettings = (): MenuSettingsState => ({
 });
 
 export const getMainMenuOptions = (): MenuOption[] => [
+    { id: 'newGame', label: 'BEGIN A NEW QUEST', description: 'Start a new adventure.' },
     { id: 'continue', label: 'CONTINUE A QUEST', description: 'Resume your current adventure.' },
     { id: 'options', label: 'OPTIONS', description: 'Adjust sound, music, and UI settings.' },
-    { id: 'begin', label: 'BEGIN A NEW QUEST', description: 'Start a new adventure.' },
-    { id: 'copy', label: 'COPY A QUEST', description: 'Duplicate an existing save slot.' },
-    { id: 'erase', label: 'ERASE A QUEST', description: 'Delete an old save slot.' },
+    { id: 'back', label: 'BACK', description: 'Return to the title screen.' },
 ];
 
-export const getOptionsMenuOptions = (): MenuOption[] => [
+export const getSettingsMenuOptions = (): MenuOption[] => [
     { id: 'sound', label: 'SOUND', description: 'Toggle sound effects.' },
     { id: 'music', label: 'MUSIC', description: 'Toggle music playback.' },
-    { id: 'speed', label: 'MESSAGE SPEED', description: 'Choose how fast dialogue advances.' },
+    { id: 'messageSpeed', label: 'MESSAGE SPEED', description: 'Choose how fast dialogue advances.' },
+    { id: 'difficulty', label: 'DIFFICULTY', description: 'Adjust combat challenge.' },
+    { id: 'back', label: 'BACK', description: 'Return to the main menu.' },
+];
+export const getStartMenuOptions = (): MenuOption[] => getMainMenuOptions();
+
+export const getOptionsMenuOptions = (): MenuOption[] => [
+    { id: 'messageSpeed', label: 'MESSAGE SPEED', description: 'Choose how fast dialogue advances.' },
+    { id: 'sound', label: 'SOUND', description: 'Toggle sound effects.' },
+    { id: 'music', label: 'MUSIC', description: 'Toggle music playback.' },
     { id: 'difficulty', label: 'DIFFICULTY', description: 'Adjust combat challenge.' },
     { id: 'back', label: 'BACK', description: 'Return to the main menu.' },
 ];

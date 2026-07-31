@@ -1,0 +1,19 @@
+{
+  "zoneId": 19,
+  "zoneCode": "ZONE_19",
+  "zoneName": "Thundercrag",
+  "biomeFamilyId": "mountains",
+  "progressionBandId": "northern-wilderness",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_19/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_19/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_19/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_19/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_19/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_19/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_19/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_19/Data/MusicData.json"
+  }
+}

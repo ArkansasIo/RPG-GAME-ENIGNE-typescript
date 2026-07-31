@@ -1,0 +1,310 @@
+{
+  "id": "dw-armor-16x16-v1",
+  "title": "Armor Classes Split Sheet",
+  "spriteSize": 16,
+  "columns": 16,
+  "rows": 2,
+  "atlasPath": "res/sheets/armor_16x16.png",
+  "entries": [
+    {
+      "spriteId": "dw.armor.light-armor.traveler-tunic.t01",
+      "groupId": "armor",
+      "categoryId": "light-armor",
+      "classId": "traveler-tunic",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.light-armor.padded-jerkin.t01",
+      "groupId": "armor",
+      "categoryId": "light-armor",
+      "classId": "padded-jerkin",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.light-armor.leather-cuirass.t01",
+      "groupId": "armor",
+      "categoryId": "light-armor",
+      "classId": "leather-cuirass",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.light-armor.studded-leather.t01",
+      "groupId": "armor",
+      "categoryId": "light-armor",
+      "classId": "studded-leather",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.light-armor.scout-mail.t01",
+      "groupId": "armor",
+      "categoryId": "light-armor",
+      "classId": "scout-mail",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.medium-armor.scale-mail.t01",
+      "groupId": "armor",
+      "categoryId": "medium-armor",
+      "classId": "scale-mail",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.medium-armor.chain-shirt.t01",
+      "groupId": "armor",
+      "categoryId": "medium-armor",
+      "classId": "chain-shirt",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.medium-armor.lamellar.t01",
+      "groupId": "armor",
+      "categoryId": "medium-armor",
+      "classId": "lamellar",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 112,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.medium-armor.brigandine.t01",
+      "groupId": "armor",
+      "categoryId": "medium-armor",
+      "classId": "brigandine",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.medium-armor.half-plate.t01",
+      "groupId": "armor",
+      "categoryId": "medium-armor",
+      "classId": "half-plate",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.heavy-armor.full-plate.t01",
+      "groupId": "armor",
+      "categoryId": "heavy-armor",
+      "classId": "full-plate",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.heavy-armor.tower-plate.t01",
+      "groupId": "armor",
+      "categoryId": "heavy-armor",
+      "classId": "tower-plate",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 176,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.heavy-armor.guardian-armor.t01",
+      "groupId": "armor",
+      "categoryId": "heavy-armor",
+      "classId": "guardian-armor",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.heavy-armor.rune-plate.t01",
+      "groupId": "armor",
+      "categoryId": "heavy-armor",
+      "classId": "rune-plate",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 208,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.heavy-armor.dragon-scale-plate.t01",
+      "groupId": "armor",
+      "categoryId": "heavy-armor",
+      "classId": "dragon-scale-plate",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 224,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.shields.buckler.t01",
+      "groupId": "armor",
+      "categoryId": "shields",
+      "classId": "buckler",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.shields.round-shield.t01",
+      "groupId": "armor",
+      "categoryId": "shields",
+      "classId": "round-shield",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.shields.kite-shield.t01",
+      "groupId": "armor",
+      "categoryId": "shields",
+      "classId": "kite-shield",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.shields.tower-shield.t01",
+      "groupId": "armor",
+      "categoryId": "shields",
+      "classId": "tower-shield",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.armor.shields.aegis-shield.t01",
+      "groupId": "armor",
+      "categoryId": "shields",
+      "classId": "aegis-shield",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    }
+  ]
+}

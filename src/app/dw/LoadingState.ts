@@ -6,11 +6,22 @@ import { Shield,ShieldData } from './Shield';
 import { DwGame } from './DwGame';
 import { GameStudioAdvertState } from './GameStudioAdvertState';
 import { EquipmentMap } from './dw';
+import { createDefaultAssetDatabaseConfig } from '@/app/dw/engine/AssetDatabase';
+import { createDefaultContentConfig, type MapConfig } from '@/app/dw/engine/ContentConfig';
 
 export interface EquipmentData {
     weapons: Record<string, WeaponData>;
     armor: Record<string, ArmorData>;
     shields: Record<string, ShieldData>;
+}
+
+export function resolveMapAssetKey(mapAsset: MapConfig): string {
+    if (mapAsset.assetKey) {
+        return mapAsset.assetKey;
+    }
+
+    const fileName = mapAsset.path.split('/').pop() ?? mapAsset.path;
+    return fileName;
 }
 
 export class LoadingState extends BaseState {
@@ -121,54 +132,34 @@ export class LoadingState extends BaseState {
             this.assetsLoaded = true;
             const game: DwGame = this.game;
 
-            game.assets.addImage('title', 'res/title.png');
-            game.assets.addSpriteSheet('hero', 'res/hero.png', 16, 16, 1, 1, true);
-            game.assets.addSpriteSheet('npcs', 'res/npcs.png', 16, 16, 1, 1, true);
-            game.assets.addImage('battleBG', 'res/battle_backgrounds.png');
-            game.assets.addImage('font', 'res/font_8x9.png');
-            void game.assets.addJson('enemies', 'res/enemies.json');
-            void game.assets.addJson('enemyTerritories', 'res/enemyTerritories.json');
-            game.assets.addCanvas('enemiesImage', 'res/monsters.png');
-            void game.assets.addJson('enemyAtlas', 'res/enemyAtlas.json');
-            void game.assets.addJson('tileset_tiles.json', 'res/maps/tileset_tiles.json');
-            void game.assets.addJson('enemy_territory_tiles.json', 'res/maps/enemy_territory_tiles.json');
-            void game.assets.addJson('collision_tiles.json', 'res/maps/collision_tiles.json');
-            void game.assets.addJson('overworld.json', 'res/maps/overworld.json');
-            void game.assets.addJson('equipment', 'res/equipment.json');
-            void game.assets.addJson('brecconary.json', 'res/maps/brecconary.json');
-            void game.assets.addJson('tantegelCastle.json', 'res/maps/tantegelCastle.json');
-            void game.assets.addJson('tantegelCastleUpstairs.json', 'res/maps/tantegelCastleUpstairs.json');
-            void game.assets.addJson('erdricksCave1.json', 'res/maps/erdricksCave1.json');
-            void game.assets.addJson('erdricksCave2.json', 'res/maps/erdricksCave2.json');
-            void game.assets.addJson('garinham.json', 'res/maps/garinham.json');
-            void game.assets.addJson('kol.json', 'res/maps/kol.json');
-            void game.assets.addSound('MUSIC_TITLE_SCREEN', 'res/sound/01 Dragon Quest 1 - Intro ~ Overture (22khz mono).ogg');
-            void game.assets.addSound('MUSIC_TANTEGEL', 'res/sound/02 Dragon Quest 1 - Tantegel Castle (22khz mono).ogg');
-            void game.assets.addSound('MUSIC_TANTEGEL_LOWER', 'res/sound/03 Dragon Quest 1 - Tantegel Castle (Lower) (22khz mono).ogg');
-            void game.assets.addSound('MUSIC_TOWN', 'res/sound/04 Dragon Quest 1 - Peaceful Village (22khz mono).ogg');
-            void game.assets.addSound('MUSIC_OVERWORLD', 'res/sound/05 Dragon Quest 1 - Kingdom of Alefgard (22khz mono).ogg');
-            void game.assets.addSound('MUSIC_BATTLE', 'res/sound/14 Dragon Quest 1 - A Monster Draws Near (16khz mono).ogg', 2.32);
-            void game.assets.addSound('MUSIC_DUNGEON_FLOOR_1', 'res/sound/06 Dragon Quest 1 - Dark Dungeon - Floor 1 (22khz mono).ogg');
-            void game.assets.addSound('dead', 'res/sound/20 Dragon Quest 1 - Thou Hast Died (22khz mono).ogg');
-            void game.assets.addSound('overnight', 'res/sound/21 Dragon Quest 1 - Special Item (22khz mono).ogg');
-            void game.assets.addSound('victory', 'res/sound/25 Dragon Quest 1 - Victory (22khz mono).ogg', 0, false);
-            void game.assets.addSound('stairs', 'res/sound/29 Dragon Quest 1 - Stairs Up (22khz mono).wav');
-            void game.assets.addSound('run', 'res/sound/30 Dragon Quest 1 - Stairs Down (22khz mono).wav');
-            void game.assets.addSound('menu', 'res/sound/32 Dragon Quest 1 - Menu Button (22khz mono).wav');
-            void game.assets.addSound('confirmation', 'res/sound/33 Dragon Quest 1 - Confirmation (22khz mono).wav');
-            void game.assets.addSound('hit', 'res/sound/34 Dragon Quest 1 - Hit (22khz mono).wav');
-            void game.assets.addSound('excellentMove', 'res/sound/35 Dragon Quest 1 - Excellent Move (22khz mono).wav');
-            void game.assets.addSound('attack', 'res/sound/36 Dragon Quest 1 - Attack (22khz mono).ogg');
-            void game.assets.addSound('receiveDamage', 'res/sound/37 Dragon Quest 1 - Receive Damage (22khz mono).wav');
-            void game.assets.addSound('prepareToAttack', 'res/sound/39 Dragon Quest 1 - Prepare to Attack (22khz mono).wav');
-            void game.assets.addSound('missed1', 'res/sound/40 Dragon Quest 1 - Missed! (22khz mono).wav');
-            void game.assets.addSound('missed2', 'res/sound/41 Dragon Quest 1 - Missed! (2) (22khz mono).wav');
-            void game.assets.addSound('bump', 'res/sound/42 Dragon Quest 1 - Bumping into Walls (22khz mono).wav');
-            void game.assets.addSound('castSpell', 'res/sound/43 Dragon Quest 1 - Cast A Spell (22khz mono).ogg');
-            void game.assets.addSound('openChest', 'res/sound/44 Dragon Quest 1 - Open Treasure (22khz mono).ogg');
-            void game.assets.addSound('door', 'res/sound/45 Dragon Quest 1 - Open Door (22khz mono).ogg');
-            void game.assets.addSound('breatheFire', 'res/sound/46 Dragon Quest 1 - Breathe Fire (22khz mono).ogg');
-            void game.assets.addSound('talk', 'res/sound/Dragon Warrior [Dragon Quest] SFX (1).wav');
+            const assetConfig = createDefaultAssetDatabaseConfig();
+            const contentConfig = createDefaultContentConfig();
+
+            assetConfig.assets.forEach((asset) => {
+                switch (asset.kind) {
+                    case 'image':
+                        game.assets.addImage(asset.key, asset.path);
+                        break;
+                    case 'sprite-sheet':
+                        game.assets.addSpriteSheet(asset.key, asset.path, 16, 16, 1, 1, true);
+                        break;
+                    case 'json':
+                        void game.assets.addJson(asset.key, asset.path);
+                        break;
+                    case 'canvas':
+                        game.assets.addCanvas(asset.key, asset.path);
+                        break;
+                    case 'sound': {
+                        const options = asset.options ?? {};
+                        const volume = typeof options.volume === 'number' ? options.volume : undefined;
+                        const loop = typeof options.loop === 'boolean' ? options.loop : undefined;
+                        void game.assets.addSound(asset.key, asset.path, volume, loop);
+                        break;
+                    }
+                    default:
+                        break;
+                }
+            });
             game.assets.onLoad(() => {
 
                 // TODO: This could be done much, much more cleanly
@@ -206,14 +197,10 @@ export class LoadingState extends BaseState {
                 );
                 game.assets.set('font', bitmapFont);
 
-                game.assets.addTmxMap(game.initLoadedMap('overworld.json'));
-                game.assets.addTmxMap(game.initLoadedMap('brecconary.json'));
-                game.assets.addTmxMap(game.initLoadedMap('tantegelCastle.json'));
-                game.assets.addTmxMap(game.initLoadedMap('tantegelCastleUpstairs.json'));
-                game.assets.addTmxMap(game.initLoadedMap('erdricksCave1.json'));
-                game.assets.addTmxMap(game.initLoadedMap('erdricksCave2.json'));
-                game.assets.addTmxMap(game.initLoadedMap('garinham.json'));
-                game.assets.addTmxMap(game.initLoadedMap('kol.json'));
+                contentConfig.maps.forEach((mapAsset) => {
+                    const assetKey = resolveMapAssetKey(mapAsset);
+                    game.assets.addTmxMap(game.initLoadedMap(assetKey));
+                });
                 game.assets.onLoad(() => {
                     const skipTitle: string | null = Utils.getRequestParam('skipTitle');
                     if (skipTitle !== null) { // Allow empty strings

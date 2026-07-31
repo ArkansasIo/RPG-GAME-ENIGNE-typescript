@@ -9,6 +9,8 @@ import { BattleCommandBubble } from './BattleCommandBubble';
 import { TextBubble } from './TextBubble';
 import { Conversation } from './Conversation';
 import { EnemyAiResult } from './EnemyAI';
+import { getMonsterDialogue } from './Story';
+import { getDisplayHeroName } from './CharacterCreation';
 
 export class BattleState extends BaseState {
 
@@ -81,10 +83,8 @@ Thy experience increases by ${this.enemy.xp}.
 Thy gold increases by ${this.enemy.gp}.`;
         this.enemiesDead = true;
 
-        this.game.hero.exp += this.enemy.xp;
+        this.game.hero.gainExperience(this.enemy.xp);
         this.game.party.gold += this.enemy.gp;
-
-        // TODO: Check for level up
 
         this.textBubble.addToConversation({ text: text, music: 'victory' });
         this.commandExecuting = false;
@@ -169,7 +169,9 @@ Thy gold increases by ${this.enemy.gp}.`;
         super.enter();
         this.commandExecuting = false;
         const conversation: Conversation = new Conversation(this.game);
-        conversation.addSegment({ text: 'A ' + this.enemy.name + ' draws near!  Command?' });
+        conversation.addSegment({ text: `A ${this.enemy.name} draws near! Command?` });
+        const monsterText = getMonsterDialogue(this.enemy.name);
+        monsterText.forEach((line) => conversation.addSegment({ text: line }));
         this.textBubble.setConversation(conversation);
     }
 
@@ -182,7 +184,20 @@ Thy gold increases by ${this.enemy.gp}.`;
     }
 
     item() {
-        this.textBubble.addToConversation({ text: 'Not implemented, command?' });
+        const herb = this.game.party.getInventory().getItems().find((inventoryItem) => inventoryItem.name === 'Herb');
+        if (!herb) {
+            this.textBubble.addToConversation({ text: 'Thou hast no herbs to use.' });
+            return;
+        }
+
+        this.game.party.getInventory().remove(herb.name);
+        const hpRecovered = Utils.randomInt(23, 31);
+        this.game.hero.incHp(hpRecovered);
+        this.textBubble.addToConversation({ text: `${getDisplayHeroName(this.game.hero.name)} used the Herb.`, sound: 'heal' }, true);
+        this.textBubble.onDone(() => {
+            this.commandExecuting = false;
+            this.enemyAttack();
+        });
     }
 
     override render(ctx: CanvasRenderingContext2D) {
@@ -257,7 +272,7 @@ Thy gold increases by ${this.enemy.gp}.`;
         this.commandExecuting = true;
         this.fightDelay = new Delay({ millis: [ 600 ], callback: this.runCallback.bind(this) });
         game.audio.playSound('run');
-        this.textBubble.addToConversation({ text: game.hero.name + ' started to run away.' }, true);
+        this.textBubble.addToConversation({ text: `${getDisplayHeroName(game.hero.name)} started to run away.` }, true);
     }
 
     private runCallback() {

@@ -1,0 +1,72 @@
+{
+  "zoneId": 43,
+  "zoneCode": "ZONE_43",
+  "zoneName": "Icewind Basin",
+  "threatTier": 5,
+  "goldRange": {
+    "min": 20,
+    "max": 60
+  },
+  "chestTable": [
+    {
+      "itemId": "Herb",
+      "weight": 40,
+      "minQty": 1,
+      "maxQty": 2
+    },
+    {
+      "itemId": "MagicKey",
+      "weight": 8,
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "itemId": "Torch",
+      "weight": 20,
+      "minQty": 1,
+      "maxQty": 2
+    },
+    {
+      "itemId": "Wings",
+      "weight": 12,
+      "minQty": 1,
+      "maxQty": 1
+    },
+    {
+      "itemId": "Gold",
+      "weight": 20,
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "gatherTable": [
+    {
+      "materialId": "MedicinalHerb",
+      "weight": 45,
+      "minQty": 1,
+      "maxQty": 3
+    },
+    {
+      "materialId": "IronOre",
+      "weight": 30,
+      "minQty": 1,
+      "maxQty": 2
+    },
+    {
+      "materialId": "ManaShard",
+      "weight": 25,
+      "minQty": 1,
+      "maxQty": 1
+    }
+  ],
+  "rareDropTable": [
+    {
+      "itemId": "DragonScale",
+      "dropRate": 0.01
+    },
+    {
+      "itemId": "MoonFragment",
+      "dropRate": 0.005
+    }
+  ]
+}

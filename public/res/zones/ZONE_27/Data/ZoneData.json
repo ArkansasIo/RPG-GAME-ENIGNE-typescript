@@ -1,0 +1,19 @@
+{
+  "zoneId": 27,
+  "zoneCode": "ZONE_27",
+  "zoneName": "Redglass Wastes",
+  "biomeFamilyId": "deserts",
+  "progressionBandId": "great-desert",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_27/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_27/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_27/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_27/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_27/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_27/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_27/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_27/Data/MusicData.json"
+  }
+}

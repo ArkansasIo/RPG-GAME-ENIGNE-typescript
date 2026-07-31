@@ -1,0 +1,19 @@
+{
+  "zoneId": 55,
+  "zoneCode": "ZONE_55",
+  "zoneName": "Bog of Bones",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_55/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_55/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_55/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_55/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_55/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_55/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_55/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_55/Data/MusicData.json"
+  }
+}

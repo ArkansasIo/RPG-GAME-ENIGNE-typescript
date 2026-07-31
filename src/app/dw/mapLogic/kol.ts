@@ -2,22 +2,30 @@ import { AbstractMapLogic, NpcTextGeneratorMap } from './AbstractMapLogic';
 import { DwGame } from '@/app/dw/DwGame';
 import { NpcText } from '@/app/dw/mapLogic/MapLogic';
 import { Conversation } from '@/app/dw/Conversation';
+import { getNpcDialogue } from '@/app/dw/Story';
 
 const talks: NpcTextGeneratorMap = {
 
     blue_man_descendant_of_erdrick: (game: DwGame): NpcText => {
-        return 'Art thou the descendant of Erdrick?\nHast thou any proof?';
+        return [
+            'Art thou the descendant of Erdrick?\nHast thou any proof?',
+            ...getNpcDialogue('scholar'),
+        ];
     },
 
     blue_man_middle: (game: DwGame): NpcText => {
         return [
             'Dreadful is the South Island.',
             'Great strength and skill and wit only will bring thee back from that place.',
+            ...getNpcDialogue('priest'),
         ];
     },
 
     blue_woman_middle: (game: DwGame): NpcText => {
-        return 'Please, save us from the minions of the Dragonlord.';
+        return [
+            'Please, save us from the minions of the Dragonlord.',
+            ...getNpcDialogue('villager'),
+        ];
     },
 
     blue_woman_near_fountain: (game: DwGame): NpcText => {

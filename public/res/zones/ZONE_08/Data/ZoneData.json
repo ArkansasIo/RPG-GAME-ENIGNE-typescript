@@ -1,0 +1,19 @@
+{
+  "zoneId": 8,
+  "zoneCode": "ZONE_08",
+  "zoneName": "Elderwood",
+  "biomeFamilyId": "forests",
+  "progressionBandId": "beginner-kingdom",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_08/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_08/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_08/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_08/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_08/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_08/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_08/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_08/Data/MusicData.json"
+  }
+}

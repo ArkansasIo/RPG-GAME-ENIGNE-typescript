@@ -22,8 +22,8 @@ export class StatBubble extends Bubble {
         this.selection = 0;
     }
 
-    private calculateX2Offs(val: number) {
-        return this.game.stringWidth(val.toString(10));
+    private calculateX2Offs(val: number | string) {
+        return this.game.stringWidth(typeof val === 'number' ? val.toString(10) : val);
         //         var digits = 1;
         //         while (val > 10) {
         //            digits++;
@@ -53,31 +53,21 @@ export class StatBubble extends Bubble {
         const Y_INC: number = this.game.stringHeight() + 7 * SCALE;
         const party: Party = this.game.party;
         const hero: Hero = this.game.hero;
+        const rows: Array<{ label: string; value: number | string }> = [
+            { label: 'LV', value: hero.level },
+            { label: 'HP', value: hero.hp },
+            { label: 'MP', value: hero.mp },
+            { label: 'G', value: party.gold },
+            { label: 'E', value: hero.exp },
+            { label: 'NXT', value: hero.getExpRemainingToNextLevel() },
+        ];
 
-        this.game.drawString('LV', x, y0);
-        let xOffs: number = this.calculateX2Offs(hero.level);
-        this.game.drawString(hero.level, x2 - xOffs, y0);
-        y0 += Y_INC;
-
-        this.game.drawString('HP', x, y0);
-        xOffs = this.calculateX2Offs(hero.hp);
-        this.game.drawString(hero.hp, x2 - xOffs, y0);
-        y0 += Y_INC;
-
-        this.game.drawString('MP', x, y0);
-        xOffs = this.calculateX2Offs(hero.mp);
-        this.game.drawString(hero.mp, x2 - xOffs, y0);
-        y0 += Y_INC;
-
-        this.game.drawString('G', x, y0);
-        xOffs = this.calculateX2Offs(party.gold);
-        this.game.drawString(party.gold, x2 - xOffs, y0);
-        y0 += Y_INC;
-
-        this.game.drawString('E', x, y0);
-        xOffs = this.calculateX2Offs(hero.exp);
-        this.game.drawString(hero.exp, x2 - xOffs, y0);
-        y0 += Y_INC;
+        rows.forEach((row) => {
+            this.game.drawString(row.label, x, y0);
+            const xOffs = this.calculateX2Offs(row.value);
+            this.game.drawString(row.value, x2 - xOffs, y0);
+            y0 += Y_INC;
+        });
 
     }
 }

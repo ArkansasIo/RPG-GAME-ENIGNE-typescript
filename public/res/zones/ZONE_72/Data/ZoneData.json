@@ -1,0 +1,19 @@
+{
+  "zoneId": 72,
+  "zoneCode": "ZONE_72",
+  "zoneName": "Worldroot / Final Realm",
+  "biomeFamilyId": "otherworld",
+  "progressionBandId": "otherworld-endgame",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_72/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_72/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_72/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_72/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_72/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_72/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_72/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_72/Data/MusicData.json"
+  }
+}

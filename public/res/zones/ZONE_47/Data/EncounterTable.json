@@ -1,0 +1,76 @@
+{
+  "zoneId": 47,
+  "zoneCode": "ZONE_47",
+  "zoneName": "Emberfall Volcano",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "threatTier": 6,
+  "recommendedPartyLevel": {
+    "min": 31,
+    "max": 39
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Starwyvern",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Werewolf",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "GreenDragon",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Starwyvern",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Werewolf",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "GreenDragon",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "Werewolf",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "GreenDragon",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_47_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

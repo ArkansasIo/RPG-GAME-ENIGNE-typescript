@@ -1,0 +1,19 @@
+{
+  "zoneId": 68,
+  "zoneCode": "ZONE_68",
+  "zoneName": "Feywild",
+  "biomeFamilyId": "otherworld",
+  "progressionBandId": "otherworld-endgame",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_68/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_68/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_68/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_68/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_68/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_68/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_68/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_68/Data/MusicData.json"
+  }
+}

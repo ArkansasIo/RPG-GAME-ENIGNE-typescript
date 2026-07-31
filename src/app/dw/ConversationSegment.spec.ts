@@ -38,10 +38,12 @@ describe('ConversationSegment', () => {
         });
 
         it('token replaces the hero remaining experience', () => {
+            game.hero.level = 2;
+            game.hero.exp = 95;
             const segment = new ConversationSegment(conversation, game, {
                 text: 'XP remaining to next level is \\w{hero.expRemaining}.',
             });
-            expect(segment.currentText()).toEqual('XP remaining to next level is 12345.');
+            expect(segment.currentText()).toEqual('XP remaining to next level is 105.');
         });
 
         it('token replaces the item name', () => {

@@ -185,7 +185,7 @@ export class RoamingState extends BaseState {
 
         if (this.statusBubble) {
             this.statusBubble.update(delta);
-            if (this.game.anyKeyDown()) {
+            if (this.statusBubble.handleInput()) {
                 delete this.statusBubble;
                 return;
             }

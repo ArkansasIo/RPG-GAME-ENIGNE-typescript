@@ -1,0 +1,19 @@
+{
+  "zoneId": 45,
+  "zoneCode": "ZONE_45",
+  "zoneName": "Aurora Fields",
+  "biomeFamilyId": "frozen-regions",
+  "progressionBandId": "frozen-north",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_45/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_45/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_45/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_45/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_45/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_45/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_45/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_45/Data/MusicData.json"
+  }
+}

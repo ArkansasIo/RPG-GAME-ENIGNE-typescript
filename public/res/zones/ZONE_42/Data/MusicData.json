@@ -1,0 +1,14 @@
+{
+  "zoneId": 42,
+  "zoneCode": "ZONE_42",
+  "tracks": {
+    "day": "MUSIC_OVERWORLD",
+    "night": "MUSIC_OVERWORLD",
+    "battle": "MUSIC_BATTLE",
+    "boss": "victory"
+  },
+  "ambience": {
+    "weather": "wind-low",
+    "biome": "frozen-regions"
+  }
+}

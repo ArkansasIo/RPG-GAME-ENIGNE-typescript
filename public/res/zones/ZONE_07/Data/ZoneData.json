@@ -1,0 +1,19 @@
+{
+  "zoneId": 7,
+  "zoneCode": "ZONE_07",
+  "zoneName": "Mistwood Forest",
+  "biomeFamilyId": "forests",
+  "progressionBandId": "beginner-kingdom",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_07/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_07/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_07/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_07/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_07/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_07/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_07/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_07/Data/MusicData.json"
+  }
+}

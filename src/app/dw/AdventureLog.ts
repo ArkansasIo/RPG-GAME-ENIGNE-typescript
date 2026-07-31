@@ -1,4 +1,5 @@
 import { Direction } from './Direction';
+import { getDisplayHeroName } from './CharacterCreation';
 
 /**
  * Part of an adventure log that logs the status of a specific map.
@@ -35,6 +36,12 @@ export interface AdventureLogSummary {
  * A saved game's progress. This is also used to track live,
  * unsaved changes as the user plays.
  */
+export interface AdventureLogQuestState {
+    activeQuestId?: string;
+    completedQuestIds: string[];
+    discoveredRegions: string[];
+}
+
 export interface AdventureLog {
     id: string;
     version: number;
@@ -64,9 +71,22 @@ export interface AdventureLog {
         gold: number;
         inventory: string[];
     };
+    quests: AdventureLogQuestState;
     mapStates: MapStateMap;
     savedGwaelin: boolean;
 }
+
+const createEmptyQuestState = (): AdventureLogQuestState => ({
+    completedQuestIds: [],
+    discoveredRegions: [],
+});
+
+const normalizeAdventureLog = (log: AdventureLog): AdventureLog => {
+    log.quests = log.quests ?? createEmptyQuestState();
+    log.quests.completedQuestIds ??= [];
+    log.quests.discoveredRegions ??= [];
+    return log;
+};
 
 /**
  * Creates a fresh adventure log for a new game.
@@ -79,7 +99,7 @@ export const createNewAdventureLog = (): AdventureLog => {
         createdAt: now,
         modifiedAt: now,
         hero: {
-            name: 'Erdrick',
+            name: 'Erdr',
             raceId: 'human',
             classId: 'warrior',
             hp: 15,
@@ -109,6 +129,7 @@ export const createNewAdventureLog = (): AdventureLog => {
                 'Herb',
             ],
         },
+        quests: createEmptyQuestState(),
         mapStates: {
             brecconary: createEmptyMapState(),
             garinham: createEmptyMapState(),
@@ -130,7 +151,8 @@ export const loadAdventureLog = (id?: string): AdventureLog => {
     if (id) {
         const json = localStorage.getItem(KEY_PREFIX + id);
         if (json) {
-            return JSON.parse(json) as AdventureLog;
+            const log = JSON.parse(json) as AdventureLog;
+            return normalizeAdventureLog(log);
         }
     }
     return createNewAdventureLog();
@@ -141,9 +163,10 @@ export const loadAdventureLog = (id?: string): AdventureLog => {
  * Mutates {@link AdventureLog.modifiedAt} to the current time.
  */
 export const saveAdventureLog = (log: AdventureLog): void => {
-    log.modifiedAt = new Date().toISOString();
-    localStorage.setItem(KEY_PREFIX + log.id, JSON.stringify(log));
-    updateIndex(log);
+    const normalizedLog = normalizeAdventureLog(log);
+    normalizedLog.modifiedAt = new Date().toISOString();
+    localStorage.setItem(KEY_PREFIX + normalizedLog.id, JSON.stringify(normalizedLog));
+    updateIndex(normalizedLog);
 };
 
 const updateIndex = (log: AdventureLog): void => {
@@ -151,7 +174,7 @@ const updateIndex = (log: AdventureLog): void => {
     const summaries: AdventureLogSummary[] = json ? JSON.parse(json) as AdventureLogSummary[] : [];
     const summary: AdventureLogSummary = {
         id: log.id,
-        heroName: log.hero.name,
+        heroName: getDisplayHeroName(log.hero.name),
         level: log.hero.level,
         createdAt: log.createdAt,
         modifiedAt: log.modifiedAt,

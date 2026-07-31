@@ -64,3 +64,4 @@ export const createQuestCatalog = (): Quest[] => [
 export const getQuests = (): Quest[] => createQuestCatalog();
 export const getMainQuests = (): Quest[] => createQuestCatalog().filter((quest) => quest.type === 'main');
 export const getSideQuests = (): Quest[] => createQuestCatalog().filter((quest) => quest.type === 'side');
+export const getQuestById = (id: string): Quest | undefined => createQuestCatalog().find((quest) => quest.id === id);

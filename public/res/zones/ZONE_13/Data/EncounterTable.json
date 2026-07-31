@@ -1,0 +1,76 @@
+{
+  "zoneId": 13,
+  "zoneCode": "ZONE_13",
+  "zoneName": "Frostpine Forest",
+  "biomeFamilyId": "forests",
+  "progressionBandId": "northern-wilderness",
+  "threatTier": 2,
+  "recommendedPartyLevel": {
+    "min": 7,
+    "max": 15
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Magician",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Scorpion",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "Skeleton",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Magician",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Scorpion",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "Skeleton",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "Scorpion",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "Skeleton",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_13_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

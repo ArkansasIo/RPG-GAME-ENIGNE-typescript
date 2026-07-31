@@ -1,114 +1,89 @@
-# DragonWarriorJS - A recreation of Dragon Warrior for the NES in TypeScript
+# DragonWarriorJS
+
 ![Build](https://github.com/bobbylight/DragonWarriorJS/actions/workflows/build.yml/badge.svg)
 ![CodeQL](https://github.com/bobbylight/DragonWarriorJS/actions/workflows/codeql-analysis.yml/badge.svg)
 
-Like it says on the tin.  This reproduction will try to be as authentic as
-possible, warts and all.
+DragonWarriorJS is a browser-based RPG engine foundation written in TypeScript with Vite and the gtp framework. It ships with a Dragon Warrior-inspired campaign as the first playable experience, while providing reusable systems for exploration, combat, party progression, dialogue, inventory, quests, and content-driven world building.
 
-I'm trying to use the GitHub issue tracker to track bugs and what I'm working on next.
-But in general, what's done is:
+## What is included
 
-* Map loading, motion, moving in and out of towns
-* Collision detection
-* Conversations with NPCs
-* Buying goods from a shop
-* Opening doors if you have a key
-* Battles (attack only)
-* Sound
+The project now provides a flexible RPG engine toolkit with a complete sample game:
 
-What's currently being worked on (half-baked):
+- Overworld exploration with maps, collisions, warps, doors, and NPCs
+- Turn-based combat with attacks, status effects, and equipment-based stat changes
+- Character creation with multiple races and classes
+- Party progression, experience, and basic combat stats
+- Quests, adventure-log progress tracking, and rewards
+- Equipment, spells, and battle UI flows
+- Data-driven content through JSON catalogs, Tiled maps, and map-logic modules
+- Hero sprite variants that change visually by class and race
+- A state-driven architecture designed to support additional campaigns and game modes
 
-* Staying overnight at an inn
-* Magic outside of battle
+## Getting started
 
-# To test this out
+### Install dependencies
 
 ```bash
 npm install
-npm run dev
-# View http://localhost:5173
 ```
 
-# Editing the Map Data
-The game is mostly data-driven. The maps are stored in [Tiled](https://www.mapeditor.org/)
-JSON files (currently generated in Tiled 1.11.1). These files
-all live in `public/res/maps`. Besides the tiles for the map, these JSON files also define
-objects such as NPCs, treasure chests, stairs, and warps (to other maps). They also all
-have a `logicFile` property that references a file in `src/app/dw/mapLogic`. This file
-contains the actual logic for the map (currently limited to just NPC conversations, but in
-the future could contain events, etc.).
+### Run locally
 
-You can run `npm run doc` to generate documentation for the classes in the game, but it
-might be easier just to reverse engineer things, e.g. starting with the `logicFile` files.
+```bash
+npm run dev
+```
 
-All Tiled maps define the same layers:
+Then open http://localhost:5173.
 
-* `tileLayer` - The actual map graphics.  Constitutes most of what you see.
-* `tileLayer2` (optional) - A second layer of tiles.  Used for the inside
-  of buildings with roofs in towns.  Where there are roofed buildings,
-  `tileLayer` will render the roof tile, and `tileLayer2` will render the
-  inside of the building.  This layer is omitted when it isn't needed.
-* `collisionLayer` - Dictates which tiles are solid and which aren't.
-  This layer is currently used for both `tileLayer` and `tileLayer2`.
-  Solid tiles can be rendered with the `collision` tileset by entering
-  a debug key combination in the game.
-* `warpLayer` - A layer containing objects of `type` `warp`.  `warp`s are
-  used to travel from map to map, and require the following custom
-  properties:
-  * `map` - The map to warp to
-  * `row` - The row at which to place the hero
-  * `col` - The column at which to place the hero
-  * `dir` (optional) - The direction the hero should face.  Should be one
-    of `north`, `east`, `south`, or `west`
-* `npcLayer` - A layer containing objects of `type`s `npc`, `talkAcross`
-  and `door`.
-  * `npc` objects should have the following custom properties:
-    * `type` - One of the values in [NpcType.ts](src/app/dw/NpcType.ts).
-    Case is ignored.  The `name` property of each `npc` is used as a lookup
-    for the NPCs conversation (see below).
-    * `wanders` - Either `true` or `false`, depending on whether you want the
-    NPC to move
-    * `dir` (optional) - The direction the NPC should initially face.  Should
-    be one of `north`, `east`, `south`, or `west`.  Note you don't usually
-    need to set this unless `wanders` is `false` and you want them to face a
-    direction other than `south`.
-  * `talkAcross` is an object type in `npcLayer` used to mark solid tiles the
-    hero should be able to talk over, such as tables to chat with a merchant.
-    Objects of type `talkAcross` currently have no custom properties.
-  * The `door` object type denotes a door that can be opened with a key.
-    They have the following custom properties:
-    * `replacementTileIndex` - The tile that should replace the door tile once
-      the door has been opened.
-* `enemyTerritoryLayer` (optional) - If defined, this layer describes enemy
-  groups.  A non-empty tile type denotes an enemy group that the hero may
-  randomly fight when stepping in it.  If this layer does not exist, no
-  random battles occur in the map (e.g. in towns).
+### Build for production
 
-The Tiled project lives in `public/res/maps`.
+```bash
+npm run build
+```
 
-# Editing NPC Conversations
-NPCs as defined in `npcLayer` above have their conversations defined in "map
-logic" files that live in
-[src/app/dw/mapLogic](src/app/dw/mapLogic).
-There is one map logic file per map.  They all follow the same pattern.  Essentially, an object maps
-each `npc`'s `name` property to a generator function that returns the
-[NpcText](src/app/dw/mapLogic/MapLogic.ts#L33)
-(i.e., the conversation that NPC will have with the hero) for that NPC. This function is passed the
-`game` instance so that it can dynamically return different values depending on how far along the
-player is.
+### Validate the project
 
-The `NpcText` itself can be simple or complex, depending on how complex the NPCs conversation
-with the hero should be. Essentially, it can be:
+```bash
+npm run tsc
+npm run test
+```
 
-* A string, in which case the NPC says just that. This is the simple case
-* An array of strings, in which case each string is rendered, but the user
-  has to press a key to advance the conversation between each string
-* An array containing a mixture of strings and
-  [ConversationSegmentArgs](src/app/dw/ConversationSegment.ts#L49), which allow for
-  logic in a conversation (question/answer, give/take money, etc.).  This type
-  of conversation data is complex, but should be pretty understandable by reading
-  the code what is possible and what each property does.
-* A `ConversationTemplate`, which is just shorthand for common conversation types.
-  It saves us from having to duplicate the purchasing/conversation logic in each
-  map. This is used for things like innkeepers and merchants.
+## Project structure
+
+- `public/res/` - game assets, maps, enemy/equipment data, sprite sheets
+- `public/res/maps/` - Tiled map JSON files
+- `src/app/dw/` - main game runtime and gameplay systems
+- `src/app/dw/mapLogic/` - per-map logic for NPC conversations and events
+- `src/test-setup.ts` - test setup utilities
+
+## Editing content
+
+### Maps
+
+Maps are stored as Tiled JSON files in `public/res/maps/`. They define tile layers, collisions, NPCs, warps, treasure, and enemy territories.
+
+Each map can reference a logic module in `src/app/dw/mapLogic/` so conversations and custom events can be driven from code.
+
+### NPC conversations
+
+Conversation logic lives in the map logic files under `src/app/dw/mapLogic/`. They map NPC names to conversation content or templates so dialogue can change based on game progress.
+
+### Enemies, equipment, and world data
+
+- `public/res/enemies.json` - enemy catalog
+- `public/res/equipment.json` - weapons, armor, shields
+- `public/res/enemyAtlas.json` - enemy sprite atlas mappings
+
+## Development notes
+
+The project is intentionally data-driven, so many additions can be made without touching the rendering engine directly:
+
+- Add new maps in Tiled and wire them into the loading flow
+- Extend the JSON catalogs for enemies or equipment
+- Add or adjust logic in the relevant map module
+- Introduce new hero variants by generating additional sprite sheets and wiring them into the variant selection logic
+
+## Documentation
+
+Additional development notes are available in [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
 

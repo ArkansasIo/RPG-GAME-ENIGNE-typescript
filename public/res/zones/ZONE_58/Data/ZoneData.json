@@ -1,0 +1,19 @@
+{
+  "zoneId": 58,
+  "zoneCode": "ZONE_58",
+  "zoneName": "Serpent's Fen",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_58/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_58/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_58/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_58/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_58/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_58/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_58/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_58/Data/MusicData.json"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "name": "Dragon Warrior NES x DnD5e Asset Class Catalog",
+    "version": 1,
+    "style": "8-bit NES pixel art",
+    "spriteSize": "16x16",
+    "masterSpecification": "90-class visual direction sheet",
+    "rarityTiers": [
+      "common",
+      "uncommon",
+      "rare",
+      "very-rare",
+      "epic",
+      "legendary",
+      "artifact"
+    ]
+  },
+  "groups": [
+    {
+      "id": "weapons",
+      "label": "Weapon Classes",
+      "targetClassCount": 30,
+      "categories": [
+        {
+          "id": "swords",
+          "label": "Swords",
+          "classes": [
+            "short-sword",
+            "long-sword",
+            "broad-sword",
+            "bastard-sword",
+            "flamebrand",
+            "dragonslayer"
+          ]
+        },
+        {
+          "id": "daggers",
+          "label": "Daggers",
+          "classes": [
+            "knife",
+            "dagger",
+            "stiletto",
+            "dirk",
+            "assassin-blade",
+            "shadow-fang"
+          ]
+        },
+        {
+          "id": "axes",
+          "label": "Axes",
+          "classes": [
+            "hatchet",
+            "hand-axe",
+            "battle-axe",
+            "war-axe",
+            "great-axe",
+            "behemoth-cleaver"
+          ]
+        },
+        {
+          "id": "maces",
+          "label": "Maces",
+          "classes": [
+            "club",
+            "mace",
+            "morning-star",
+            "flanged-mace",
+            "holy-mace",
+            "meteor-hammer"
+          ]
+        },
+        {
+          "id": "polearms",
+          "label": "Polearms",
+          "classes": [
+            "spear",
+            "pike",
+            "halberd",
+            "glaive",
+            "partisan",
+            "dragon-lance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armor",
+      "label": "Armor Classes",
+      "targetClassCount": 20,
+      "categories": [
+        {
+          "id": "light-armor",
+          "label": "Light Armor",
+          "classes": [
+            "traveler-tunic",
+            "padded-jerkin",
+            "leather-cuirass",
+            "studded-leather",
+            "scout-mail"
+          ]
+        },
+        {
+          "id": "medium-armor",
+          "label": "Medium Armor",
+          "classes": [
+            "scale-mail",
+            "chain-shirt",
+            "lamellar",
+            "brigandine",
+            "half-plate"
+          ]
+        },
+        {
+          "id": "heavy-armor",
+          "label": "Heavy Armor",
+          "classes": [
+            "full-plate",
+            "tower-plate",
+            "guardian-armor",
+            "rune-plate",
+            "dragon-scale-plate"
+          ]
+        },
+        {
+          "id": "shields",
+          "label": "Shields",
+          "classes": [
+            "buckler",
+            "round-shield",
+            "kite-shield",
+            "tower-shield",
+            "aegis-shield"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accessories",
+      "label": "Accessory and Equipment Classes",
+      "targetClassCount": 20,
+      "categories": [
+        {
+          "id": "rings",
+          "label": "Rings",
+          "classes": [
+            "ring-of-vigor",
+            "ring-of-wisdom",
+            "ring-of-luck",
+            "ring-of-warding"
+          ]
+        },
+        {
+          "id": "amulets",
+          "label": "Amulets",
+          "classes": [
+            "amulet-of-light",
+            "amulet-of-tides",
+            "amulet-of-embers",
+            "amulet-of-thunder"
+          ]
+        },
+        {
+          "id": "belts",
+          "label": "Belts",
+          "classes": [
+            "belt-of-giant-might",
+            "belt-of-focus",
+            "belt-of-swiftness",
+            "belt-of-resolve"
+          ]
+        },
+        {
+          "id": "gloves",
+          "label": "Gloves",
+          "classes": [
+            "leather-gloves",
+            "gauntlets-of-power",
+            "mage-gloves",
+            "thief-gloves"
+          ]
+        },
+        {
+          "id": "boots",
+          "label": "Boots",
+          "classes": [
+            "traveler-boots",
+            "iron-greaves",
+            "winged-boots",
+            "shadow-boots"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adventure-world",
+      "label": "Consumable, Utility, Crafting and World Classes",
+      "targetClassCount": 20,
+      "categories": [
+        {
+          "id": "consumables",
+          "label": "Consumables",
+          "classes": [
+            "minor-healing-potion",
+            "major-healing-potion"
+          ]
+        },
+        {
+          "id": "utility",
+          "label": "Utility",
+          "classes": [
+            "torch",
+            "lockpick-set"
+          ]
+        },
+        {
+          "id": "crafting",
+          "label": "Crafting Materials",
+          "classes": [
+            "iron-ore",
+            "mana-crystal"
+          ]
+        },
+        {
+          "id": "profession",
+          "label": "Profession Tools",
+          "classes": [
+            "blacksmith-hammer",
+            "alchemist-kit"
+          ]
+        },
+        {
+          "id": "mounts",
+          "label": "Mounts",
+          "classes": [
+            "field-horse",
+            "war-wolf"
+          ]
+        },
+        {
+          "id": "vehicles",
+          "label": "Vehicles",
+          "classes": [
+            "wooden-cart",
+            "sky-skiff"
+          ]
+        },
+        {
+          "id": "npcs",
+          "label": "NPC Sprites",
+          "classes": [
+            "town-guard-sprite",
+            "merchant-sprite"
+          ]
+        },
+        {
+          "id": "monsters",
+          "label": "Monster Sprites",
+          "classes": [
+            "slime-sprite",
+            "wyvern-sprite"
+          ]
+        },
+        {
+          "id": "relics",
+          "label": "Relics",
+          "classes": [
+            "sun-sigil",
+            "moon-relic"
+          ]
+        },
+        {
+          "id": "misc",
+          "label": "Miscellaneous",
+          "classes": [
+            "quest-charter",
+            "ancient-key"
+          ]
+        }
+      ]
+    }
+  ],
+  "uiModules": [
+    "inventory-window",
+    "battle-window",
+    "dialogue-window",
+    "status-icons",
+    "buff-debuff-icons"
+  ]
+}

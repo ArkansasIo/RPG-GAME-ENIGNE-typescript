@@ -27,13 +27,8 @@ import { DwMap } from './DwMap';
 import { BattleState } from './BattleState';
 import { BattleTransitionState } from './BattleTransitionState';
 
-import { Brecconary } from './mapLogic/brecconary';
-import { ErdricksCave1 } from './mapLogic/erdricksCave1';
-import { ErdricksCave2 } from './mapLogic/erdricksCave2';
-import { Garinham } from './mapLogic/garinham';
-import { Overworld } from './mapLogic/overworld';
-import { TantegelCastle } from './mapLogic/tantegelCastle';
 import { MapLogic } from './mapLogic/MapLogic';
+import { createDragonWarriorCampaignDefinition, registerDragonWarriorCampaign } from '@/app/dw/engine/DragonWarriorCampaign';
 import { EquipmentMap } from './dw';
 import {
     AdventureLog,
@@ -48,10 +43,10 @@ import { EnemyData } from './Enemy';
 import { RoamingEntityRange } from './RoamingEntity';
 import { HERB, Item, getItemByName } from '@/app/dw/Item';
 import { HiddenItem, HiddenItemType } from '@/app/dw/HiddenItem';
-import { Kol } from '@/app/dw/mapLogic/kol';
 import { ColoredTextSpan } from '@/app/dw/Bubble';
-import { createDefaultCharacterCreationState, CharacterCreationState, getCharacterCreationSummary } from './CharacterCreation';
-
+import { createDefaultCharacterCreationState, CharacterCreationState, getCharacterCreationSummary, applyCharacterBonuses } from './CharacterCreation';
+import { EngineContentRegistry } from '@/app/dw/engine/ContentRegistry';
+import { CampaignRegistry, CampaignDefinition } from '@/app/dw/engine/CampaignRegistry';
 
 export type TiledMapMap = Record<string, DwMap>;
 
@@ -66,8 +61,13 @@ export class DwGame extends Game {
     private characterCreation = createDefaultCharacterCreationState();
     private bumpSoundDelay = 0;
     private readonly mapLogics = new Map<string, MapLogic>();
+    private readonly contentRegistry = new EngineContentRegistry();
+    private readonly campaignRegistry = new CampaignRegistry();
+    private activeCampaignId?: string;
     private randomEncounters = true;
     private torch = false;
+    private pointerPosition?: { x: number; y: number };
+    private pendingClick?: { x: number; y: number };
     inside = false;
     npcsPaused = false;
     private cameraDx = 0;
@@ -80,6 +80,7 @@ export class DwGame extends Game {
         this.hero = new Hero(this, { name: this.characterCreation.name, raceId: this.characterCreation.raceId, classId: this.characterCreation.classId });
         this.party = new Party(this);
         this.party.addMember(this.hero);
+        this.initializePointerInput();
     }
 
     override start() {
@@ -92,13 +93,48 @@ export class DwGame extends Game {
         this.randomEncounters = true;
         this.torch = false;
 
-        this.mapLogics.set('Brecconary', new Brecconary());
-        this.mapLogics.set('erdricksCave1', new ErdricksCave1());
-        this.mapLogics.set('erdricksCave2', new ErdricksCave2());
-        this.mapLogics.set('Garinham', new Garinham());
-        this.mapLogics.set('Kol', new Kol());
-        this.mapLogics.set('Overworld', new Overworld());
-        this.mapLogics.set('TantegelCastle', new TantegelCastle());
+        this.contentRegistry.reset();
+        this.contentRegistry.applyTo(this);
+        this.registerCampaign(createDragonWarriorCampaignDefinition());
+        registerDragonWarriorCampaign(this);
+        this.activeCampaignId = 'dragon-warrior';
+    }
+
+    private initializePointerInput() {
+        this.canvas.addEventListener('mousemove', (event: MouseEvent) => {
+            this.pointerPosition = this.getCanvasPoint(event);
+        });
+        this.canvas.addEventListener('mouseleave', () => {
+            this.pointerPosition = undefined;
+        });
+        this.canvas.addEventListener('mousedown', (event: MouseEvent) => {
+            event.preventDefault();
+            this.pendingClick = this.getCanvasPoint(event);
+        });
+    }
+
+    private getCanvasPoint(event: MouseEvent): { x: number; y: number } {
+        const rect = this.canvas.getBoundingClientRect();
+        if (!rect.width || !rect.height) {
+            return { x: event.offsetX, y: event.offsetY };
+        }
+
+        const scaleX = this.canvas.width / rect.width;
+        const scaleY = this.canvas.height / rect.height;
+        return {
+            x: (event.clientX - rect.left) * scaleX,
+            y: (event.clientY - rect.top) * scaleY,
+        };
+    }
+
+    getPointerPosition(): { x: number; y: number } | undefined {
+        return this.pointerPosition;
+    }
+
+    consumePointerClick(): { x: number; y: number } | undefined {
+        const click = this.pendingClick;
+        this.pendingClick = undefined;
+        return click;
     }
 
     actionKeyPressed() {
@@ -259,8 +295,39 @@ export class DwGame extends Game {
     getMapLogic(): MapLogic | undefined {
         let logicFile: string = this.getMap().getProperty('logicFile');
         logicFile = logicFile.charAt(0).toUpperCase() + logicFile.substring(1);
-        console.log(logicFile);
         return this.mapLogics.get(logicFile);
+    }
+
+    registerMapLogic(mapId: string, logic: MapLogic): void {
+        this.mapLogics.set(mapId, logic);
+    }
+
+    registerContentModule(module: { id: string; title: string; register(game: DwGame): void }): void {
+        this.contentRegistry.register(module);
+    }
+
+    registerCampaign(campaign: CampaignDefinition): void {
+        this.campaignRegistry.register(campaign);
+    }
+
+    getCampaigns(): CampaignDefinition[] {
+        return this.campaignRegistry.getAll();
+    }
+
+    getActiveCampaignId(): string | undefined {
+        return this.activeCampaignId;
+    }
+
+    setActiveCampaign(id: string): boolean {
+        const campaign = this.campaignRegistry.get(id);
+        if (!campaign) {
+            return false;
+        }
+        this.activeCampaignId = id;
+        this.contentRegistry.reset();
+        this.contentRegistry.applyTo(this);
+        campaign.register(this);
+        return true;
     }
 
     getMapXOffs(): number {
@@ -631,6 +698,7 @@ export class DwGame extends Game {
         newLog.hero.classId = this.characterCreation.classId;
         this.adventureLog = newLog;
         this.initHeroFromAdventureLog();
+        applyCharacterBonuses(this.hero, this.characterCreation.raceId, this.characterCreation.classId);
         this.transitionToGame();
     }
 

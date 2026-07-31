@@ -15,7 +15,7 @@ export const resolveCombatAction = (
 ): CombatResolution => {
     const accuracy = Math.max(5, Math.min(95, 55 + heroAccuracy * 3 - enemyDodge * 2 - (defending ? 15 : 0)));
     const resolvedRoll = typeof roll === 'number' ? roll : Utils.randomInt(0, 101);
-    const hit = resolvedRoll <= accuracy;
+    const hit = resolvedRoll > 1 && (resolvedRoll <= accuracy || resolvedRoll >= Math.max(90, accuracy - 5));
     const critical = hit && resolvedRoll >= Math.max(5, accuracy - 12);
     const baseDamage = Math.max(1, heroStrength + (critical ? 2 : 0));
     const damage = hit ? Math.max(1, defending ? Math.floor(baseDamage / 2) : baseDamage) : 0;

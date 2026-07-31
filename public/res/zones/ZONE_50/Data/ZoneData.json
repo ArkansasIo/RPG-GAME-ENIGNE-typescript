@@ -1,0 +1,19 @@
+{
+  "zoneId": 50,
+  "zoneCode": "ZONE_50",
+  "zoneName": "Fire Giant Forge",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_50/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_50/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_50/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_50/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_50/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_50/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_50/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_50/Data/MusicData.json"
+  }
+}

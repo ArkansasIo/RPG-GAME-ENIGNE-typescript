@@ -1,4 +1,5 @@
 import { AbstractMapLogic } from './AbstractMapLogic';
+import { getNpcDialogue } from '@/app/dw/Story';
 
 /**
  * Logic for Erdrick's Cave, 1st floor.
@@ -6,6 +7,11 @@ import { AbstractMapLogic } from './AbstractMapLogic';
 export class ErdricksCave1 extends AbstractMapLogic {
 
     constructor() {
-        super({});
+        super({
+            guardian: () => [
+                'The cave breathes like a sleeping beast.',
+                ...getNpcDialogue('scholar'),
+            ],
+        });
     }
 }

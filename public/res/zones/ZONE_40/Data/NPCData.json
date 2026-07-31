@@ -1,0 +1,22 @@
+{
+  "zoneId": 40,
+  "zoneCode": "ZONE_40",
+  "roster": [
+    {
+      "id": "zone_40_innkeeper",
+      "role": "innkeeper",
+      "disposition": "neutral"
+    },
+    {
+      "id": "zone_40_merchant",
+      "role": "merchant",
+      "disposition": "friendly"
+    },
+    {
+      "id": "zone_40_guard",
+      "role": "guard",
+      "disposition": "cautious"
+    }
+  ],
+  "notes": "Replace placeholder NPC roster with authored narrative NPCs."
+}

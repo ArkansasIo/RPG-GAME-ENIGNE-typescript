@@ -42,6 +42,14 @@ export class Party {
         return false;
     }
 
+    applyQuestReward(quest: { reward: string; title: string }) {
+        this.addGold(100);
+        const rewardItem = this.getInventory().getItems().find((item) => item.name === quest.reward);
+        if (!rewardItem) {
+            this.addInventoryItem({ name: quest.reward } as Item);
+        }
+    }
+
     /**
      * Adds a member to the party.
      *

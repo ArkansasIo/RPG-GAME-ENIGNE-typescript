@@ -1,0 +1,76 @@
+{
+  "zoneId": 63,
+  "zoneCode": "ZONE_63",
+  "zoneName": "Goblin Warrens",
+  "biomeFamilyId": "underground",
+  "progressionBandId": "deep-underground",
+  "threatTier": 8,
+  "recommendedPartyLevel": {
+    "min": 43,
+    "max": 51
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Stoneman",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "ArmoredKnight",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "RedDragon",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Stoneman",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "ArmoredKnight",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "RedDragon",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "ArmoredKnight",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "RedDragon",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_63_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

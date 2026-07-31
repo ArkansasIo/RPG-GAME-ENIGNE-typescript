@@ -11,6 +11,7 @@ import { healSpell, hurtSpell, Spell } from '@/app/dw/Spell';
 import { CombatStats, createDefaultCombatStats, getEffectiveAttribute, getEffectiveSubAttribute } from '@/app/dw/CombatStats';
 import { Equipment } from './Equipment';
 import { getSpriteDetailConfig } from './SpriteDetails';
+import { getHeroSpriteVariant } from './HeroSpriteVariant';
 
 export interface PartyMemberArgs extends RoamingEntityArgs {
     hp?: number;
@@ -120,6 +121,24 @@ export class PartyMember extends RoamingEntity {
         return getEffectiveSubAttribute(this.combatStats, 'evasion');
     }
 
+    getExpRemainingToNextLevel(): number {
+        return Math.max(0, this.level * 100 - this.exp);
+    }
+
+    gainExperience(amount: number): number {
+        this.exp += amount;
+        while (this.exp >= this.level * 100) {
+            this.level += 1;
+            this.maxHp += 5;
+            this.hp = this.maxHp;
+            this.maxMp += 2;
+            this.mp = this.maxMp;
+            this.strength += 1;
+            this.agility += 1;
+        }
+        return this.exp;
+    }
+
     /**
      * Called when this entity intersects an object on the map.  The default
      * implementation does nothing; subclasses can override.
@@ -166,8 +185,14 @@ export class PartyMember extends RoamingEntity {
 
         const x: number = (this.game.canvas.width - tileSize) / 2;
         const y: number = (this.game.canvas.height - tileSize) / 2;
-        const spriteSheet: SpriteSheet = this.game.assets.get('hero');
-        spriteSheet.drawSprite(ctx, x, y, ssRow, ssCol);
+        const variant = getHeroSpriteVariant({ classId: this.classId, raceId: this.raceId });
+        const spriteSheet = this.game.assets.get(variant.assetKey) as SpriteSheet | undefined;
+        const fallbackSpriteSheet = this.game.assets.get('hero') as SpriteSheet;
+        if (!spriteSheet) {
+            fallbackSpriteSheet.drawSprite(ctx, x, y, ssRow, ssCol);
+        } else {
+            spriteSheet.drawSprite(ctx, x, y, ssRow, ssCol);
+        }
 
         const detail = getSpriteDetailConfig('hero', { classId: this.classId, raceId: this.raceId });
         if (detail) {
