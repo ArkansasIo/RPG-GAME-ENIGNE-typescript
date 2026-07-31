@@ -62,6 +62,26 @@ describe('Enemy', () => {
             expect(enemy.gp).toEqual(10);
         });
 
+        it('stores optional monster classification metadata', () => {
+            const enemy = new Enemy(game, {
+                ...slimeData,
+                monsterClass: 'Beast',
+                monsterSubClass: 'Marsh',
+                monsterType: 'Creature',
+                monsterSubType: 'Mire',
+                race: 'Slimeborn',
+                title: 'Mire Warden',
+                rank: 'Common',
+            });
+            expect(enemy.monsterClass).toEqual('Beast');
+            expect(enemy.monsterSubClass).toEqual('Marsh');
+            expect(enemy.monsterType).toEqual('Creature');
+            expect(enemy.monsterSubType).toEqual('Mire');
+            expect(enemy.race).toEqual('Slimeborn');
+            expect(enemy.title).toEqual('Mire Warden');
+            expect(enemy.rank).toEqual('Common');
+        });
+
         it('randomizes gp within range when gp is an array', () => {
             const randomIntSpy = vi.spyOn(Utils, 'randomInt').mockReturnValue(4);
             const enemy = new Enemy(game, { ...slimeData, gp: [ 3, 6 ] });

@@ -8,6 +8,7 @@ import { Armor } from './Armor';
 import { Enemy } from './Enemy';
 import { DwGame } from './DwGame';
 import { healSpell, hurtSpell, Spell } from '@/app/dw/Spell';
+import { CombatStats, createDefaultCombatStats, getEffectiveAttribute, getEffectiveSubAttribute } from '@/app/dw/CombatStats';
 
 export interface PartyMemberArgs extends RoamingEntityArgs {
     hp?: number;
@@ -30,6 +31,7 @@ export class PartyMember extends RoamingEntity {
     armor?: Armor;
     shield?: Shield;
     readonly spells: Spell[];
+    readonly combatStats: CombatStats;
 
     constructor(game: DwGame, args: PartyMemberArgs) {
 
@@ -47,6 +49,7 @@ export class PartyMember extends RoamingEntity {
         this.maxMp = this.mp;
 
         this.spells = [ healSpell, hurtSpell ];
+        this.combatStats = createDefaultCombatStats();
 
         //BattleEntity.call(this, args); // TODO: Better way to do a mixin?
         //Utils.mixin(RoamingEntityMixin.prototype, this);
@@ -77,7 +80,7 @@ export class PartyMember extends RoamingEntity {
     }
 
     getDefense() {
-        let defense: number = Math.floor(this.agility / 2);
+        let defense: number = Math.floor(this.agility / 2) + getEffectiveSubAttribute(this.combatStats, 'defense');
         if (this.armor) {
             defense += this.armor.defense;
         }
@@ -92,7 +95,19 @@ export class PartyMember extends RoamingEntity {
     }
 
     getStrength(): number {
-        return this.strength + (this.weapon ? this.weapon.power : 0);
+        return getEffectiveAttribute(this.combatStats, 'strength') + (this.weapon ? this.weapon.power : 0);
+    }
+
+    getAgility(): number {
+        return getEffectiveAttribute(this.combatStats, 'agility');
+    }
+
+    getAccuracy(): number {
+        return getEffectiveSubAttribute(this.combatStats, 'accuracy');
+    }
+
+    getEvasion(): number {
+        return getEffectiveSubAttribute(this.combatStats, 'evasion');
     }
 
     /**

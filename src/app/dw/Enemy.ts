@@ -18,6 +18,13 @@ export interface EnemyData {
     xp: number;
     gp: number | number[];
     ai: string; // TODO: improve
+    monsterClass?: string;
+    monsterSubClass?: string;
+    monsterType?: string;
+    monsterSubType?: string;
+    race?: string;
+    title?: string;
+    rank?: string;
 }
 
 export class Enemy extends BattleEntity {
@@ -33,6 +40,13 @@ export class Enemy extends BattleEntity {
     xp: number;
     gp: number;
     ai: EnemyAiFunc;
+    monsterClass?: string;
+    monsterSubClass?: string;
+    monsterType?: string;
+    monsterSubType?: string;
+    race?: string;
+    title?: string;
+    rank?: string;
 
     constructor(game: DwGame, args: EnemyData) {
 
@@ -47,6 +61,13 @@ export class Enemy extends BattleEntity {
         this.dodge = args.dodge;
         this.xp = args.xp;
         this.ai = getEnemyAi(args.ai);
+        this.monsterClass = args.monsterClass;
+        this.monsterSubClass = args.monsterSubClass;
+        this.monsterType = args.monsterType;
+        this.monsterSubType = args.monsterSubType;
+        this.race = args.race;
+        this.title = args.title;
+        this.rank = args.rank;
 
         Utils.mixin(RoamingEntity.prototype, this);
 
