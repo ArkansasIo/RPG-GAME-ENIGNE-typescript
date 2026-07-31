@@ -41,6 +41,7 @@ export const createDefaultContentConfig = (): GameContentConfig => ({
         { key: 'enemies', kind: 'json', path: 'res/enemies.json' },
         { key: 'enemyTerritories', kind: 'json', path: 'res/enemyTerritories.json' },
         { key: 'assetClassCatalog', kind: 'json', path: 'res/assetClassCatalog.json' },
+        { key: 'sourceSheetCatalog', kind: 'json', path: 'res/assets/sourceSheetCatalog.json' },
         { key: 'zoneCatalog72', kind: 'json', path: 'res/zoneCatalog72.json' },
         { key: 'zoneDataManifest72', kind: 'json', path: 'res/zones/zoneDataManifest72.json' },
         { key: 'enemiesImage', kind: 'canvas', path: 'res/monsters.png' },

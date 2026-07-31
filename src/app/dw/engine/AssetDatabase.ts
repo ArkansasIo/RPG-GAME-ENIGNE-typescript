@@ -29,6 +29,7 @@ export const createDefaultAssetDatabaseConfig = (): AssetDatabaseConfig => ({
         { kind: 'json', key: 'enemies', path: 'res/enemies.json' },
         { kind: 'json', key: 'enemyTerritories', path: 'res/enemyTerritories.json' },
         { kind: 'json', key: 'assetClassCatalog', path: 'res/assetClassCatalog.json' },
+        { kind: 'json', key: 'sourceSheetCatalog', path: 'res/assets/sourceSheetCatalog.json' },
         { kind: 'json', key: 'zoneCatalog72', path: 'res/zoneCatalog72.json' },
         { kind: 'json', key: 'zoneDataManifest72', path: 'res/zones/zoneDataManifest72.json' },
         { kind: 'canvas', key: 'enemiesImage', path: 'res/monsters.png' },

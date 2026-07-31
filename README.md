@@ -87,3 +87,5 @@ The project is intentionally data-driven, so many additions can be made without 
 
 Additional development notes are available in [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
 
+Asset import instructions for the master source sheets are in [docs/ASSET_IMPORT.md](docs/ASSET_IMPORT.md).
+
