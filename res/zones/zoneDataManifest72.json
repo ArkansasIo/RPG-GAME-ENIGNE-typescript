@@ -1,0 +1,872 @@
+{
+  "id": "dw-zone-data-72-v1",
+  "title": "72-zone encounter and loot scaffold",
+  "version": 1,
+  "generatedAt": "2026-07-31T13:12:08.292Z",
+  "zones": [
+    {
+      "id": 1,
+      "code": "ZONE_01",
+      "name": "Dawnvale Plains",
+      "data": {
+        "zoneData": "res/zones/ZONE_01/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_01/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_01/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_01/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_01/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 2,
+      "code": "ZONE_02",
+      "name": "Greenheart Meadow",
+      "data": {
+        "zoneData": "res/zones/ZONE_02/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_02/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_02/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_02/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_02/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 3,
+      "code": "ZONE_03",
+      "name": "Kingsroad Fields",
+      "data": {
+        "zoneData": "res/zones/ZONE_03/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_03/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_03/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_03/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_03/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 4,
+      "code": "ZONE_04",
+      "name": "Whispering Prairie",
+      "data": {
+        "zoneData": "res/zones/ZONE_04/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_04/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_04/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_04/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_04/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 5,
+      "code": "ZONE_05",
+      "name": "Sunflower Valley",
+      "data": {
+        "zoneData": "res/zones/ZONE_05/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_05/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_05/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_05/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_05/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 6,
+      "code": "ZONE_06",
+      "name": "Emerald Pastures",
+      "data": {
+        "zoneData": "res/zones/ZONE_06/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_06/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_06/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_06/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_06/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 7,
+      "code": "ZONE_07",
+      "name": "Mistwood Forest",
+      "data": {
+        "zoneData": "res/zones/ZONE_07/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_07/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_07/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_07/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_07/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 8,
+      "code": "ZONE_08",
+      "name": "Elderwood",
+      "data": {
+        "zoneData": "res/zones/ZONE_08/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_08/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_08/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_08/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_08/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 9,
+      "code": "ZONE_09",
+      "name": "Moonleaf Grove",
+      "data": {
+        "zoneData": "res/zones/ZONE_09/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_09/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_09/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_09/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_09/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 10,
+      "code": "ZONE_10",
+      "name": "Blackpine Woods",
+      "data": {
+        "zoneData": "res/zones/ZONE_10/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_10/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_10/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_10/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_10/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 11,
+      "code": "ZONE_11",
+      "name": "Thornveil Forest",
+      "data": {
+        "zoneData": "res/zones/ZONE_11/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_11/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_11/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_11/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_11/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 12,
+      "code": "ZONE_12",
+      "name": "Fairywood",
+      "data": {
+        "zoneData": "res/zones/ZONE_12/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_12/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_12/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_12/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_12/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 13,
+      "code": "ZONE_13",
+      "name": "Frostpine Forest",
+      "data": {
+        "zoneData": "res/zones/ZONE_13/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_13/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_13/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_13/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_13/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 14,
+      "code": "ZONE_14",
+      "name": "Whisperwood",
+      "data": {
+        "zoneData": "res/zones/ZONE_14/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_14/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_14/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_14/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_14/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 15,
+      "code": "ZONE_15",
+      "name": "Ironwood Wilds",
+      "data": {
+        "zoneData": "res/zones/ZONE_15/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_15/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_15/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_15/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_15/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 16,
+      "code": "ZONE_16",
+      "name": "Dragonroot Forest",
+      "data": {
+        "zoneData": "res/zones/ZONE_16/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_16/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_16/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_16/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_16/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 17,
+      "code": "ZONE_17",
+      "name": "Stonefang Mountains",
+      "data": {
+        "zoneData": "res/zones/ZONE_17/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_17/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_17/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_17/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_17/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 18,
+      "code": "ZONE_18",
+      "name": "Frostpeak Range",
+      "data": {
+        "zoneData": "res/zones/ZONE_18/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_18/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_18/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_18/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_18/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 19,
+      "code": "ZONE_19",
+      "name": "Thundercrag",
+      "data": {
+        "zoneData": "res/zones/ZONE_19/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_19/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_19/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_19/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_19/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 20,
+      "code": "ZONE_20",
+      "name": "Dragonspire Peaks",
+      "data": {
+        "zoneData": "res/zones/ZONE_20/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_20/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_20/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_20/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_20/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 21,
+      "code": "ZONE_21",
+      "name": "Giants' Crown",
+      "data": {
+        "zoneData": "res/zones/ZONE_21/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_21/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_21/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_21/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_21/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 22,
+      "code": "ZONE_22",
+      "name": "Silverhorn Range",
+      "data": {
+        "zoneData": "res/zones/ZONE_22/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_22/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_22/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_22/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_22/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 23,
+      "code": "ZONE_23",
+      "name": "Blackstone Ridge",
+      "data": {
+        "zoneData": "res/zones/ZONE_23/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_23/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_23/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_23/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_23/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 24,
+      "code": "ZONE_24",
+      "name": "Skyreach Mountains",
+      "data": {
+        "zoneData": "res/zones/ZONE_24/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_24/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_24/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_24/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_24/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 25,
+      "code": "ZONE_25",
+      "name": "Sunscar Desert",
+      "data": {
+        "zoneData": "res/zones/ZONE_25/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_25/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_25/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_25/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_25/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 26,
+      "code": "ZONE_26",
+      "name": "Golden Dunes",
+      "data": {
+        "zoneData": "res/zones/ZONE_26/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_26/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_26/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_26/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_26/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 27,
+      "code": "ZONE_27",
+      "name": "Redglass Wastes",
+      "data": {
+        "zoneData": "res/zones/ZONE_27/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_27/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_27/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_27/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_27/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 28,
+      "code": "ZONE_28",
+      "name": "Bone Desert",
+      "data": {
+        "zoneData": "res/zones/ZONE_28/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_28/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_28/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_28/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_28/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 29,
+      "code": "ZONE_29",
+      "name": "Mirage Sea",
+      "data": {
+        "zoneData": "res/zones/ZONE_29/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_29/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_29/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_29/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_29/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 30,
+      "code": "ZONE_30",
+      "name": "Scorpion Sands",
+      "data": {
+        "zoneData": "res/zones/ZONE_30/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_30/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_30/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_30/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_30/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 31,
+      "code": "ZONE_31",
+      "name": "Ashen Wastes",
+      "data": {
+        "zoneData": "res/zones/ZONE_31/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_31/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_31/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_31/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_31/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 32,
+      "code": "ZONE_32",
+      "name": "Dead King's Desert",
+      "data": {
+        "zoneData": "res/zones/ZONE_32/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_32/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_32/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_32/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_32/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 33,
+      "code": "ZONE_33",
+      "name": "Azure Coast",
+      "data": {
+        "zoneData": "res/zones/ZONE_33/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_33/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_33/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_33/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_33/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 34,
+      "code": "ZONE_34",
+      "name": "Mermaid Shores",
+      "data": {
+        "zoneData": "res/zones/ZONE_34/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_34/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_34/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_34/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_34/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 35,
+      "code": "ZONE_35",
+      "name": "Stormbreaker Coast",
+      "data": {
+        "zoneData": "res/zones/ZONE_35/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_35/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_35/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_35/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_35/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 36,
+      "code": "ZONE_36",
+      "name": "Coral Kingdom",
+      "data": {
+        "zoneData": "res/zones/ZONE_36/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_36/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_36/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_36/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_36/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 37,
+      "code": "ZONE_37",
+      "name": "Pirate's Bay",
+      "data": {
+        "zoneData": "res/zones/ZONE_37/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_37/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_37/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_37/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_37/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 38,
+      "code": "ZONE_38",
+      "name": "Leviathan Sea",
+      "data": {
+        "zoneData": "res/zones/ZONE_38/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_38/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_38/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_38/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_38/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 39,
+      "code": "ZONE_39",
+      "name": "Frozen Sea",
+      "data": {
+        "zoneData": "res/zones/ZONE_39/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_39/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_39/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_39/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_39/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 40,
+      "code": "ZONE_40",
+      "name": "Sunken Coast",
+      "data": {
+        "zoneData": "res/zones/ZONE_40/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_40/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_40/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_40/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_40/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 41,
+      "code": "ZONE_41",
+      "name": "Frostholm Tundra",
+      "data": {
+        "zoneData": "res/zones/ZONE_41/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_41/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_41/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_41/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_41/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 42,
+      "code": "ZONE_42",
+      "name": "Whitefang Glacier",
+      "data": {
+        "zoneData": "res/zones/ZONE_42/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_42/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_42/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_42/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_42/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 43,
+      "code": "ZONE_43",
+      "name": "Icewind Basin",
+      "data": {
+        "zoneData": "res/zones/ZONE_43/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_43/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_43/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_43/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_43/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 44,
+      "code": "ZONE_44",
+      "name": "Winterwolf Valley",
+      "data": {
+        "zoneData": "res/zones/ZONE_44/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_44/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_44/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_44/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_44/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 45,
+      "code": "ZONE_45",
+      "name": "Aurora Fields",
+      "data": {
+        "zoneData": "res/zones/ZONE_45/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_45/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_45/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_45/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_45/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 46,
+      "code": "ZONE_46",
+      "name": "Frozen Dragonlands",
+      "data": {
+        "zoneData": "res/zones/ZONE_46/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_46/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_46/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_46/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_46/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 47,
+      "code": "ZONE_47",
+      "name": "Emberfall Volcano",
+      "data": {
+        "zoneData": "res/zones/ZONE_47/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_47/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_47/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_47/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_47/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 48,
+      "code": "ZONE_48",
+      "name": "Magmaheart Crater",
+      "data": {
+        "zoneData": "res/zones/ZONE_48/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_48/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_48/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_48/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_48/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 49,
+      "code": "ZONE_49",
+      "name": "Cinderlands",
+      "data": {
+        "zoneData": "res/zones/ZONE_49/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_49/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_49/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_49/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_49/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 50,
+      "code": "ZONE_50",
+      "name": "Fire Giant Forge",
+      "data": {
+        "zoneData": "res/zones/ZONE_50/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_50/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_50/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_50/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_50/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 51,
+      "code": "ZONE_51",
+      "name": "Inferno Caverns",
+      "data": {
+        "zoneData": "res/zones/ZONE_51/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_51/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_51/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_51/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_51/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 52,
+      "code": "ZONE_52",
+      "name": "Dragonfire Caldera",
+      "data": {
+        "zoneData": "res/zones/ZONE_52/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_52/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_52/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_52/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_52/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 53,
+      "code": "ZONE_53",
+      "name": "Moonshadow Swamp",
+      "data": {
+        "zoneData": "res/zones/ZONE_53/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_53/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_53/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_53/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_53/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 54,
+      "code": "ZONE_54",
+      "name": "Witchfen",
+      "data": {
+        "zoneData": "res/zones/ZONE_54/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_54/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_54/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_54/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_54/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 55,
+      "code": "ZONE_55",
+      "name": "Bog of Bones",
+      "data": {
+        "zoneData": "res/zones/ZONE_55/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_55/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_55/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_55/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_55/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 56,
+      "code": "ZONE_56",
+      "name": "Blackwater Mire",
+      "data": {
+        "zoneData": "res/zones/ZONE_56/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_56/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_56/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_56/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_56/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 57,
+      "code": "ZONE_57",
+      "name": "Lizardfolk Marsh",
+      "data": {
+        "zoneData": "res/zones/ZONE_57/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_57/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_57/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_57/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_57/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 58,
+      "code": "ZONE_58",
+      "name": "Serpent's Fen",
+      "data": {
+        "zoneData": "res/zones/ZONE_58/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_58/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_58/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_58/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_58/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 59,
+      "code": "ZONE_59",
+      "name": "Dreaming Marsh",
+      "data": {
+        "zoneData": "res/zones/ZONE_59/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_59/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_59/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_59/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_59/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 60,
+      "code": "ZONE_60",
+      "name": "Drowned Kingdom",
+      "data": {
+        "zoneData": "res/zones/ZONE_60/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_60/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_60/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_60/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_60/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 61,
+      "code": "ZONE_61",
+      "name": "Crystal Caverns",
+      "data": {
+        "zoneData": "res/zones/ZONE_61/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_61/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_61/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_61/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_61/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 62,
+      "code": "ZONE_62",
+      "name": "Deepstone Mines",
+      "data": {
+        "zoneData": "res/zones/ZONE_62/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_62/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_62/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_62/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_62/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 63,
+      "code": "ZONE_63",
+      "name": "Goblin Warrens",
+      "data": {
+        "zoneData": "res/zones/ZONE_63/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_63/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_63/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_63/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_63/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 64,
+      "code": "ZONE_64",
+      "name": "Dwarfhold Depths",
+      "data": {
+        "zoneData": "res/zones/ZONE_64/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_64/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_64/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_64/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_64/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 65,
+      "code": "ZONE_65",
+      "name": "Underdark",
+      "data": {
+        "zoneData": "res/zones/ZONE_65/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_65/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_65/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_65/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_65/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 66,
+      "code": "ZONE_66",
+      "name": "Demonstone Abyss",
+      "data": {
+        "zoneData": "res/zones/ZONE_66/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_66/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_66/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_66/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_66/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 67,
+      "code": "ZONE_67",
+      "name": "Shadowlands",
+      "data": {
+        "zoneData": "res/zones/ZONE_67/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_67/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_67/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_67/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_67/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 68,
+      "code": "ZONE_68",
+      "name": "Feywild",
+      "data": {
+        "zoneData": "res/zones/ZONE_68/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_68/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_68/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_68/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_68/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 69,
+      "code": "ZONE_69",
+      "name": "Celestial Highlands",
+      "data": {
+        "zoneData": "res/zones/ZONE_69/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_69/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_69/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_69/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_69/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 70,
+      "code": "ZONE_70",
+      "name": "Elemental Nexus",
+      "data": {
+        "zoneData": "res/zones/ZONE_70/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_70/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_70/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_70/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_70/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 71,
+      "code": "ZONE_71",
+      "name": "Dragon Graveyard",
+      "data": {
+        "zoneData": "res/zones/ZONE_71/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_71/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_71/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_71/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_71/Data/MusicData.json"
+      }
+    },
+    {
+      "id": 72,
+      "code": "ZONE_72",
+      "name": "Worldroot / Final Realm",
+      "data": {
+        "zoneData": "res/zones/ZONE_72/Data/ZoneData.json",
+        "encounterTable": "res/zones/ZONE_72/Data/EncounterTable.json",
+        "lootTable": "res/zones/ZONE_72/Data/LootTable.json",
+        "npcData": "res/zones/ZONE_72/Data/NPCData.json",
+        "musicData": "res/zones/ZONE_72/Data/MusicData.json"
+      }
+    }
+  ]
+}

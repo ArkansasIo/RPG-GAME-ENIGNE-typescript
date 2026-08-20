@@ -1,0 +1,19 @@
+{
+  "zoneId": 22,
+  "zoneCode": "ZONE_22",
+  "zoneName": "Silverhorn Range",
+  "biomeFamilyId": "mountains",
+  "progressionBandId": "northern-wilderness",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_22/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_22/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_22/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_22/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_22/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_22/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_22/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_22/Data/MusicData.json"
+  }
+}

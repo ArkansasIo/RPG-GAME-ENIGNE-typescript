@@ -1,0 +1,310 @@
+{
+  "id": "dw-adventure-world-16x16-v1",
+  "title": "Consumable, Utility, Crafting and World Classes Split Sheet",
+  "spriteSize": 16,
+  "columns": 16,
+  "rows": 2,
+  "atlasPath": "res/sheets/adventure-world_16x16.png",
+  "entries": [
+    {
+      "spriteId": "dw.adventure-world.consumables.minor-healing-potion.t01",
+      "groupId": "adventure-world",
+      "categoryId": "consumables",
+      "classId": "minor-healing-potion",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.consumables.major-healing-potion.t01",
+      "groupId": "adventure-world",
+      "categoryId": "consumables",
+      "classId": "major-healing-potion",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.utility.torch.t01",
+      "groupId": "adventure-world",
+      "categoryId": "utility",
+      "classId": "torch",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.utility.lockpick-set.t01",
+      "groupId": "adventure-world",
+      "categoryId": "utility",
+      "classId": "lockpick-set",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.crafting.iron-ore.t01",
+      "groupId": "adventure-world",
+      "categoryId": "crafting",
+      "classId": "iron-ore",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.crafting.mana-crystal.t01",
+      "groupId": "adventure-world",
+      "categoryId": "crafting",
+      "classId": "mana-crystal",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.profession.blacksmith-hammer.t01",
+      "groupId": "adventure-world",
+      "categoryId": "profession",
+      "classId": "blacksmith-hammer",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.profession.alchemist-kit.t01",
+      "groupId": "adventure-world",
+      "categoryId": "profession",
+      "classId": "alchemist-kit",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 112,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.mounts.field-horse.t01",
+      "groupId": "adventure-world",
+      "categoryId": "mounts",
+      "classId": "field-horse",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.mounts.war-wolf.t01",
+      "groupId": "adventure-world",
+      "categoryId": "mounts",
+      "classId": "war-wolf",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.vehicles.wooden-cart.t01",
+      "groupId": "adventure-world",
+      "categoryId": "vehicles",
+      "classId": "wooden-cart",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.vehicles.sky-skiff.t01",
+      "groupId": "adventure-world",
+      "categoryId": "vehicles",
+      "classId": "sky-skiff",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 176,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.npcs.town-guard-sprite.t01",
+      "groupId": "adventure-world",
+      "categoryId": "npcs",
+      "classId": "town-guard-sprite",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.npcs.merchant-sprite.t01",
+      "groupId": "adventure-world",
+      "categoryId": "npcs",
+      "classId": "merchant-sprite",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 208,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.monsters.slime-sprite.t01",
+      "groupId": "adventure-world",
+      "categoryId": "monsters",
+      "classId": "slime-sprite",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 224,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.monsters.wyvern-sprite.t01",
+      "groupId": "adventure-world",
+      "categoryId": "monsters",
+      "classId": "wyvern-sprite",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.relics.sun-sigil.t01",
+      "groupId": "adventure-world",
+      "categoryId": "relics",
+      "classId": "sun-sigil",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.relics.moon-relic.t01",
+      "groupId": "adventure-world",
+      "categoryId": "relics",
+      "classId": "moon-relic",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.misc.quest-charter.t01",
+      "groupId": "adventure-world",
+      "categoryId": "misc",
+      "classId": "quest-charter",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.adventure-world.misc.ancient-key.t01",
+      "groupId": "adventure-world",
+      "categoryId": "misc",
+      "classId": "ancient-key",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "zoneId": 54,
+  "zoneCode": "ZONE_54",
+  "zoneName": "Witchfen",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "threatTier": 7,
+  "recommendedPartyLevel": {
+    "min": 37,
+    "max": 45
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Wizard",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "AxeKnight",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "BlueDragon",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Wizard",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "AxeKnight",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "BlueDragon",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "AxeKnight",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "BlueDragon",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_54_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

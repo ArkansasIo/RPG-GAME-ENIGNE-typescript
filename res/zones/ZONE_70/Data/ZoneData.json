@@ -1,0 +1,19 @@
+{
+  "zoneId": 70,
+  "zoneCode": "ZONE_70",
+  "zoneName": "Elemental Nexus",
+  "biomeFamilyId": "otherworld",
+  "progressionBandId": "otherworld-endgame",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_70/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_70/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_70/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_70/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_70/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_70/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_70/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_70/Data/MusicData.json"
+  }
+}

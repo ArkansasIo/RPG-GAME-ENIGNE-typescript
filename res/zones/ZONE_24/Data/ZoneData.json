@@ -1,0 +1,19 @@
+{
+  "zoneId": 24,
+  "zoneCode": "ZONE_24",
+  "zoneName": "Skyreach Mountains",
+  "biomeFamilyId": "mountains",
+  "progressionBandId": "northern-wilderness",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_24/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_24/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_24/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_24/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_24/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_24/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_24/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_24/Data/MusicData.json"
+  }
+}

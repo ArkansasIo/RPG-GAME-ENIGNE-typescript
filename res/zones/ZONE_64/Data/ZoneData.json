@@ -1,0 +1,19 @@
+{
+  "zoneId": 64,
+  "zoneCode": "ZONE_64",
+  "zoneName": "Dwarfhold Depths",
+  "biomeFamilyId": "underground",
+  "progressionBandId": "deep-underground",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_64/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_64/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_64/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_64/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_64/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_64/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_64/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_64/Data/MusicData.json"
+  }
+}

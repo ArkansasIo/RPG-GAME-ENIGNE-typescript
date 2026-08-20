@@ -1,0 +1,19 @@
+{
+  "zoneId": 26,
+  "zoneCode": "ZONE_26",
+  "zoneName": "Golden Dunes",
+  "biomeFamilyId": "deserts",
+  "progressionBandId": "great-desert",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_26/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_26/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_26/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_26/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_26/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_26/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_26/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_26/Data/MusicData.json"
+  }
+}

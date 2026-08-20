@@ -1,0 +1,76 @@
+{
+  "zoneId": 33,
+  "zoneCode": "ZONE_33",
+  "zoneName": "Azure Coast",
+  "biomeFamilyId": "coasts-and-oceans",
+  "progressionBandId": "oceanic-kingdoms",
+  "threatTier": 4,
+  "recommendedPartyLevel": {
+    "min": 19,
+    "max": 27
+  },
+  "tables": {
+    "day": [
+      {
+        "enemyId": "Droll",
+        "weight": 55,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Wraith",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "MetalScorpion",
+        "weight": 15,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
+    "night": [
+      {
+        "enemyId": "Droll",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "enemyId": "Wraith",
+        "weight": 35,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "enemyId": "MetalScorpion",
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "weatherOverride": {
+      "storm": [
+        {
+          "enemyId": "Wraith",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "enemyId": "MetalScorpion",
+          "weight": 50,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ]
+    }
+  },
+  "boss": {
+    "enabled": true,
+    "encounterId": "zone_33_boss",
+    "trigger": "arena-entry",
+    "notes": "Replace placeholder boss encounter with zone-specific design."
+  }
+}

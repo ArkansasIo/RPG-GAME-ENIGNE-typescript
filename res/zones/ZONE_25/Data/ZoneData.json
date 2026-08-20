@@ -1,0 +1,19 @@
+{
+  "zoneId": 25,
+  "zoneCode": "ZONE_25",
+  "zoneName": "Sunscar Desert",
+  "biomeFamilyId": "deserts",
+  "progressionBandId": "great-desert",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_25/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_25/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_25/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_25/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_25/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_25/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_25/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_25/Data/MusicData.json"
+  }
+}

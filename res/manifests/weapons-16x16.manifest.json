@@ -1,0 +1,460 @@
+{
+  "id": "dw-weapons-16x16-v1",
+  "title": "Weapon Classes Split Sheet",
+  "spriteSize": 16,
+  "columns": 16,
+  "rows": 2,
+  "atlasPath": "res/sheets/weapons_16x16.png",
+  "entries": [
+    {
+      "spriteId": "dw.weapons.swords.short-sword.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "short-sword",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.swords.long-sword.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "long-sword",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.swords.broad-sword.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "broad-sword",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.swords.bastard-sword.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "bastard-sword",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.swords.flamebrand.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "flamebrand",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.swords.dragonslayer.t01",
+      "groupId": "weapons",
+      "categoryId": "swords",
+      "classId": "dragonslayer",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 80,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.knife.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "knife",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 96,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.dagger.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "dagger",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 112,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.stiletto.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "stiletto",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 128,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.dirk.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "dirk",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 144,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.assassin-blade.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "assassin-blade",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 160,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.daggers.shadow-fang.t01",
+      "groupId": "weapons",
+      "categoryId": "daggers",
+      "classId": "shadow-fang",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 176,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.hatchet.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "hatchet",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 192,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.hand-axe.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "hand-axe",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 208,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.battle-axe.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "battle-axe",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 224,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.war-axe.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "war-axe",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 240,
+        "y": 0,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.great-axe.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "great-axe",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 0,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.axes.behemoth-cleaver.t01",
+      "groupId": "weapons",
+      "categoryId": "axes",
+      "classId": "behemoth-cleaver",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 16,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.club.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "club",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 32,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.mace.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "mace",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 48,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.morning-star.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "morning-star",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 64,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.flanged-mace.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "flanged-mace",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 80,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.holy-mace.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "holy-mace",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 96,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.maces.meteor-hammer.t01",
+      "groupId": "weapons",
+      "categoryId": "maces",
+      "classId": "meteor-hammer",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 112,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.spear.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "spear",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 128,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.pike.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "pike",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 144,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.halberd.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "halberd",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 160,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.glaive.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "glaive",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 176,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.partisan.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "partisan",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 192,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    },
+    {
+      "spriteId": "dw.weapons.polearms.dragon-lance.t01",
+      "groupId": "weapons",
+      "categoryId": "polearms",
+      "classId": "dragon-lance",
+      "tier": 1,
+      "rarity": "common",
+      "rect": {
+        "x": 208,
+        "y": 16,
+        "w": 16,
+        "h": 16
+      },
+      "placeholder": true
+    }
+  ]
+}

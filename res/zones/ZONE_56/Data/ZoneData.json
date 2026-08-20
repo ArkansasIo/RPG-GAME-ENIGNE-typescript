@@ -1,0 +1,19 @@
+{
+  "zoneId": 56,
+  "zoneCode": "ZONE_56",
+  "zoneName": "Blackwater Mire",
+  "biomeFamilyId": "swamps",
+  "progressionBandId": "swamplands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_56/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_56/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_56/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_56/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_56/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_56/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_56/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_56/Data/MusicData.json"
+  }
+}

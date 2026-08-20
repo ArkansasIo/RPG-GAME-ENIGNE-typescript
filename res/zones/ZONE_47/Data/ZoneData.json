@@ -1,0 +1,19 @@
+{
+  "zoneId": 47,
+  "zoneCode": "ZONE_47",
+  "zoneName": "Emberfall Volcano",
+  "biomeFamilyId": "volcanic-regions",
+  "progressionBandId": "firelands",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_47/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_47/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_47/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_47/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_47/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_47/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_47/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_47/Data/MusicData.json"
+  }
+}

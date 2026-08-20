@@ -1,0 +1,18 @@
+{
+  "name": "The Shattered Crown D&D/NES Visual Pack",
+  "style": "16-bit pixel art, jewel-tone fantasy, dark navy shadows, antique gold accents",
+  "sources": [
+    "hero-sheet.png",
+    "monster-sheet.png",
+    "biome-scenes.png",
+    "items-spells.png",
+    "title-loading.png",
+    "visual-master-v2.png",
+    "dragonborn-reference.png"
+  ],
+  "gameplayAssets": {
+    "title": "res/title.png",
+    "battleBackground": "res/battle_backgrounds.png",
+    "banner": "res/art/dnd5e/shattered-crown-banner.png"
+  }
+}

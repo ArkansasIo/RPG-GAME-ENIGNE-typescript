@@ -1,0 +1,1946 @@
+{
+  "Slime": {
+    "name": "Slime",
+    "image": "Slime",
+    "damagedImage": "Slime_damaged",
+    "str": 5,
+    "agility": 3,
+    "hp": 3,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 1,
+    "gp": 1,
+    "ai": "attackOnly"
+  },
+  "RedSlime": {
+    "name": "Red Slime",
+    "image": "RedSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 7,
+    "agility": 3,
+    "hp": 4,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 1,
+    "gp": 2,
+    "ai": "attackOnly"
+  },
+  "Drakee": {
+    "name": "Drakee",
+    "image": "Drakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 9,
+    "agility": 6,
+    "hp": [
+      5,
+      6
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 2,
+    "gp": 2,
+    "ai": "attackOnly"
+  },
+  "Ghost": {
+    "name": "Ghost",
+    "image": "Ghost",
+    "damagedImage": "Ghost_damaged",
+    "str": 11,
+    "agility": 8,
+    "hp": [
+      6,
+      7
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 3,
+    "gp": [
+      3,
+      4
+    ],
+    "ai": "attackOnly"
+  },
+  "Magician": {
+    "name": "Magician",
+    "image": "Magician",
+    "damagedImage": "Magician_damaged",
+    "str": 11,
+    "agility": 12,
+    "hp": [
+      10,
+      13
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 4,
+    "gp": [
+      9,
+      11
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Magidrakee": {
+    "name": "Magidrakee",
+    "image": "Magidrakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 14,
+    "agility": 14,
+    "hp": [
+      12,
+      15
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 5,
+    "gp": [
+      9,
+      11
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Scorpion": {
+    "name": "Scorpion",
+    "image": "Scorpion",
+    "damagedImage": "Scorpion_damaged",
+    "str": 18,
+    "agility": 16,
+    "hp": [
+      16,
+      20
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 6,
+    "gp": [
+      12,
+      15
+    ],
+    "ai": "attackOnly"
+  },
+  "Druin": {
+    "name": "Druin",
+    "image": "Druin",
+    "damagedImage": "Druin_damaged",
+    "str": 20,
+    "agility": 18,
+    "hp": [
+      17,
+      22
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 7,
+    "gp": [
+      12,
+      15
+    ],
+    "ai": "attackOnly"
+  },
+  "Poltergeist": {
+    "name": "Poltergeist",
+    "image": "Poltergeist",
+    "damagedImage": "Ghost_damaged",
+    "str": 18,
+    "agility": 20,
+    "hp": [
+      18,
+      23
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 8,
+    "gp": [
+      13,
+      17
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Droll": {
+    "name": "Droll",
+    "image": "Droll",
+    "damagedImage": "Droll_damaged",
+    "str": 24,
+    "agility": 24,
+    "hp": [
+      19,
+      25
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 14,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 10,
+    "gp": [
+      18,
+      24
+    ],
+    "ai": "attackOnly"
+  },
+  "Drakeema": {
+    "name": "Drakeema",
+    "image": "Drakeema",
+    "damagedImage": "Drakee_damaged",
+    "str": 22,
+    "agility": 26,
+    "hp": [
+      16,
+      20
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 11,
+    "gp": [
+      15,
+      19
+    ],
+    "ai": "drakeemaAi"
+  },
+  "Skeleton": {
+    "name": "Skeleton",
+    "image": "Skeleton",
+    "damagedImage": "Skeleton_damaged",
+    "str": 28,
+    "agility": 22,
+    "hp": [
+      23,
+      30
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 11,
+    "gp": [
+      22,
+      29
+    ],
+    "ai": "attackOnly"
+  },
+  "Warlock": {
+    "name": "Warlock",
+    "image": "Warlock",
+    "damagedImage": "Warlock_damaged",
+    "str": 28,
+    "agility": 22,
+    "hp": [
+      23,
+      30
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 13,
+    "gp": [
+      26,
+      34
+    ],
+    "ai": "25Sleep50Hurt25Attack"
+  },
+  "Metal Scorpion": {
+    "name": "Metal Scorpion",
+    "shortName": "Metal Scorp",
+    "image": "MetalScorpion",
+    "damagedImage": "MetalScorpion_damaged",
+    "str": 36,
+    "agility": 42,
+    "hp": [
+      17,
+      22
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 14,
+    "gp": [
+      30,
+      39
+    ],
+    "ai": "attackOnly"
+  },
+  "Wolf": {
+    "name": "Wolf",
+    "image": "Wolf",
+    "damagedImage": "Wolf_damaged",
+    "str": 40,
+    "agility": 30,
+    "hp": [
+      26,
+      34
+    ],
+    "resist": {
+      "sleep": 1,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 16,
+    "gp": [
+      37,
+      49
+    ],
+    "ai": "attackOnly"
+  },
+  "Wraith": {
+    "name": "Wraith",
+    "image": "Wraith",
+    "damagedImage": "Wraith_damaged",
+    "str": 44,
+    "agility": 34,
+    "hp": [
+      28,
+      36
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 17,
+    "gp": [
+      45,
+      59
+    ],
+    "ai": "wraithAi"
+  },
+  "MetalSlime": {
+    "name": "Metal Slime",
+    "image": "MetalSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 10,
+    "agility": 255,
+    "hp": 4,
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 1,
+    "xp": 115,
+    "gp": [
+      4,
+      5
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Specter": {
+    "name": "Specter",
+    "image": "Specter",
+    "damagedImage": "Specter_damaged",
+    "str": 40,
+    "agility": 38,
+    "hp": [
+      28,
+      36
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 18,
+    "gp": [
+      52,
+      69
+    ],
+    "ai": "specterAi"
+  },
+  "Wolflord": {
+    "name": "Wolflord",
+    "image": "Wolflord",
+    "damagedImage": "Wolflord_damaged",
+    "str": 50,
+    "agility": 36,
+    "hp": [
+      29,
+      38
+    ],
+    "resist": {
+      "sleep": 4,
+      "stopSpell": 7,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 20,
+    "gp": [
+      60,
+      79
+    ],
+    "ai": "stopSpellAi"
+  },
+  "Druinlord": {
+    "name": "Druinlord",
+    "image": "Druinlord",
+    "damagedImage": "Druinlord_damaged",
+    "str": 47,
+    "agility": 40,
+    "hp": [
+      27,
+      35
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 20,
+    "gp": [
+      63,
+      84
+    ],
+    "ai": "druinlordAi"
+  },
+  "Drollmagi": {
+    "name": "Drollmagi",
+    "image": "Drollmagi",
+    "damagedImage": "Droll_damaged",
+    "str": 52,
+    "agility": 50,
+    "hp": [
+      29,
+      38
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 2,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 22,
+    "gp": [
+      67,
+      89
+    ],
+    "ai": "stopSpellAi"
+  },
+  "Wyvern": {
+    "name": "Wyvern",
+    "image": "Wyvern",
+    "damagedImage": "Wyvern_damaged",
+    "str": 56,
+    "agility": 48,
+    "hp": [
+      32,
+      42
+    ],
+    "resist": {
+      "sleep": 4,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 24,
+    "gp": [
+      75,
+      99
+    ],
+    "ai": "attackOnly"
+  },
+  "RogueScorpion": {
+    "name": "Rogue Scorpion",
+    "shortName": "Rogue Scorp",
+    "image": "RogueScorpion",
+    "damagedImage": "Scorpion_damaged",
+    "str": 60,
+    "agility": 90,
+    "hp": [
+      27,
+      35
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 26,
+    "gp": [
+      82,
+      109
+    ],
+    "ai": "attackOnly"
+  },
+  "WraithKnight": {
+    "name": "Wraith Knight",
+    "image": "WraithKnight",
+    "damagedImage": "SkeletonWithSword_damaged",
+    "str": 68,
+    "agility": 56,
+    "hp": [
+      35,
+      46
+    ],
+    "resist": {
+      "sleep": 5,
+      "stopSpell": 0,
+      "hurt": 3
+    },
+    "dodge": 4,
+    "xp": 28,
+    "gp": [
+      90,
+      119
+    ],
+    "ai": "wraithKnightAi"
+  },
+  "Golem": {
+    "name": "Golem",
+    "image": "Golem",
+    "damagedImage": "Golem_damaged",
+    "str": 120,
+    "agility": 60,
+    "hp": [
+      53,
+      70
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 0,
+    "xp": 5,
+    "gp": [
+      7,
+      9
+    ],
+    "ai": "attackOnly"
+  },
+  "Goldman": {
+    "name": "Goldman",
+    "image": "Goldman",
+    "damagedImage": "Golem_lefthand_damaged",
+    "str": 48,
+    "agility": 40,
+    "hp": [
+      38,
+      50
+    ],
+    "resist": {
+      "sleep": 13,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 6,
+    "gp": [
+      150,
+      199
+    ],
+    "ai": "attackOnly"
+  },
+  "Knight": {
+    "name": "Knight",
+    "image": "Knight",
+    "damagedImage": "Knight_damaged",
+    "str": 76,
+    "agility": 78,
+    "hp": [
+      42,
+      55
+    ],
+    "resist": {
+      "sleep": 6,
+      "stopSpell": 7,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 33,
+    "gp": [
+      97,
+      129
+    ],
+    "ai": "stopSpellAi"
+  },
+  "Magiwyvern": {
+    "name": "Magiwyvern",
+    "image": "Magiwyvern",
+    "damagedImage": "Magiwyvern_damaged",
+    "str": 78,
+    "agility": 68,
+    "hp": [
+      44,
+      58
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 34,
+    "gp": [
+      105,
+      139
+    ],
+    "ai": "magiwyvernAi"
+  },
+  "DemonKnight": {
+    "name": "Demon Knight",
+    "image": "DemonKnight",
+    "damagedImage": "SkeletonWithSword_damaged",
+    "str": 79,
+    "agility": 64,
+    "hp": [
+      38,
+      50
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 15,
+    "xp": 37,
+    "gp": [
+      112,
+      149
+    ],
+    "ai": "attackOnly"
+  },
+  "Werewolf": {
+    "name": "Werewolf",
+    "image": "Werewolf",
+    "damagedImage": "Werewolf_damaged",
+    "str": 86,
+    "agility": 70,
+    "hp": [
+      46,
+      60
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 7,
+    "xp": 40,
+    "gp": [
+      116,
+      154
+    ],
+    "ai": "attackOnly"
+  },
+  "GreenDragon": {
+    "name": "Green Dragon",
+    "image": "GreenDragon",
+    "damagedImage": "GreenDragon_damaged",
+    "str": 88,
+    "agility": 74,
+    "hp": [
+      49,
+      65
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 15,
+      "hurt": 2
+    },
+    "dodge": 2,
+    "xp": 45,
+    "gp": [
+      120,
+      159
+    ],
+    "ai": "greenDragonAi"
+  },
+  "Starwyvern": {
+    "name": "Starwyvern",
+    "image": "Starwyvern",
+    "damagedImage": "Starwyvern_damaged",
+    "str": 86,
+    "agility": 80,
+    "hp": [
+      49,
+      65
+    ],
+    "resist": {
+      "sleep": 8,
+      "stopSpell": 0,
+      "hurt": 1
+    },
+    "dodge": 2,
+    "xp": 43,
+    "gp": [
+      120,
+      159
+    ],
+    "ai": "starwyvernAi"
+  },
+  "Wizard": {
+    "name": "Wizard",
+    "image": "Wizard",
+    "damagedImage": "Wizard_damaged",
+    "str": 80,
+    "agility": 70,
+    "hp": [
+      49,
+      65
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 7,
+      "hurt": 15
+    },
+    "dodge": 2,
+    "xp": 50,
+    "gp": [
+      123,
+      164
+    ],
+    "ai": "wizardAi"
+  },
+  "AxeKnight": {
+    "name": "Axe Knight",
+    "image": "AxeKnight",
+    "damagedImage": "AxeKnight_damaged",
+    "str": 94,
+    "agility": 82,
+    "hp": [
+      53,
+      70
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 3,
+      "hurt": 1
+    },
+    "dodge": 1,
+    "xp": 54,
+    "gp": [
+      123,
+      164
+    ],
+    "ai": "axeKnightAi"
+  },
+  "BlueDragon": {
+    "name": "Blue Dragon",
+    "image": "BlueDragon",
+    "damagedImage": "FireBreathingDragon_damaged",
+    "str": 98,
+    "agility": 84,
+    "hp": [
+      53,
+      70
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 7
+    },
+    "dodge": 2,
+    "xp": 60,
+    "gp": [
+      112,
+      149
+    ],
+    "ai": "greenDragonAi"
+  },
+  "Stoneman": {
+    "name": "Stoneman",
+    "image": "Stoneman",
+    "damagedImage": "Golem_lefthand_damaged",
+    "str": 100,
+    "agility": 40,
+    "hp": [
+      121,
+      160
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 15,
+      "hurt": 7
+    },
+    "dodge": 1,
+    "xp": 65,
+    "gp": [
+      105,
+      139
+    ],
+    "ai": "attackOnly"
+  },
+  "ArmoredKnight": {
+    "name": "Armored Knight",
+    "shortName": "Armrd Knight",
+    "image": "ArmoredKnight",
+    "damagedImage": "ArmoredKnight_damaged",
+    "str": 105,
+    "agility": 86,
+    "hp": [
+      68,
+      90
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 7,
+      "hurt": 1
+    },
+    "dodge": 2,
+    "xp": 70,
+    "gp": [
+      105,
+      139
+    ],
+    "ai": "armoredKnightAi"
+  },
+  "RedDragon": {
+    "name": "Red Dragon",
+    "image": "RedDragon",
+    "damagedImage": "FireBreathingDragon_damaged",
+    "str": 120,
+    "agility": 90,
+    "hp": [
+      76,
+      100
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 7,
+      "hurt": 15
+    },
+    "dodge": 2,
+    "xp": 100,
+    "gp": [
+      105,
+      139
+    ],
+    "ai": "redDragonAi"
+  },
+  "Dragonlord": {
+    "name": "Dragonlord",
+    "image": "Dragonlord",
+    "damagedImage": "Dragonlord_damaged",
+    "str": 90,
+    "agility": 75,
+    "hp": [
+      76,
+      100
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 0,
+    "xp": 0,
+    "gp": 0,
+    "ai": "dragonlord1Ai"
+  },
+  "DragonlordForm2": {
+    "name": "Dragonlord 2",
+    "image": "DragonlordForm2",
+    "damagedImage": "DragonlordForm2_damaged",
+    "str": 140,
+    "agility": 200,
+    "hp": 130,
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 0,
+    "xp": 0,
+    "gp": 0,
+    "ai": "dragonlord2Ai"
+  },
+  "Goblin Scout": {
+    "name": "Goblin Scout",
+    "image": "Wolf",
+    "damagedImage": "Wolf_damaged",
+    "str": 8,
+    "agility": 6,
+    "hp": 12,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 12,
+    "gp": 5,
+    "ai": "attackOnly"
+  },
+  "Dire Wolf": {
+    "name": "Dire Wolf",
+    "image": "Wolf",
+    "damagedImage": "Wolf_damaged",
+    "str": 18,
+    "agility": 8,
+    "hp": 35,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 3,
+    "xp": 45,
+    "gp": 12,
+    "ai": "attackOnly"
+  },
+  "Stone Golem": {
+    "name": "Stone Golem",
+    "image": "Golem",
+    "damagedImage": "Golem_damaged",
+    "str": 28,
+    "agility": 2,
+    "hp": 110,
+    "resist": {
+      "sleep": 100,
+      "stopSpell": 50,
+      "hurt": 50
+    },
+    "dodge": 1,
+    "xp": 300,
+    "gp": 40,
+    "ai": "attackOnly"
+  },
+  "Ember Elemental": {
+    "name": "Ember Elemental",
+    "image": "GreenDragon",
+    "damagedImage": "GreenDragon_damaged",
+    "str": 20,
+    "agility": 10,
+    "hp": 80,
+    "resist": {
+      "sleep": 50,
+      "stopSpell": 25,
+      "hurt": 25
+    },
+    "dodge": 4,
+    "xp": 220,
+    "gp": 35,
+    "ai": "greenDragonAi"
+  },
+  "Young Green Dragon": {
+    "name": "Young Green Dragon",
+    "image": "GreenDragon",
+    "damagedImage": "GreenDragon_damaged",
+    "str": 32,
+    "agility": 14,
+    "hp": 150,
+    "resist": {
+      "sleep": 50,
+      "stopSpell": 25,
+      "hurt": 25
+    },
+    "dodge": 5,
+    "xp": 650,
+    "gp": 90,
+    "ai": "greenDragonAi"
+  },
+  "Lich of the Deep": {
+    "name": "Lich of the Deep",
+    "image": "Dragonlord",
+    "damagedImage": "Dragonlord_damaged",
+    "str": 26,
+    "agility": 16,
+    "hp": 220,
+    "resist": {
+      "sleep": 100,
+      "stopSpell": 50,
+      "hurt": 50
+    },
+    "dodge": 6,
+    "xp": 1400,
+    "gp": 250,
+    "ai": "dragonlord1Ai"
+  },
+  "Veteran Slime": {
+    "name": "Veteran Slime",
+    "image": "Slime",
+    "damagedImage": "Slime_damaged",
+    "str": 6,
+    "agility": 4,
+    "hp": 4,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 1,
+    "gp": 1,
+    "ai": "attackOnly"
+  },
+  "Elite Slime": {
+    "name": "Elite Slime",
+    "image": "Slime",
+    "damagedImage": "Slime_damaged",
+    "str": 8,
+    "agility": 5,
+    "hp": 5,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 2,
+    "gp": 2,
+    "ai": "attackOnly"
+  },
+  "Veteran Red Slime": {
+    "name": "Veteran Red Slime",
+    "image": "RedSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 9,
+    "agility": 4,
+    "hp": 5,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 1,
+    "gp": 2,
+    "ai": "attackOnly"
+  },
+  "Elite Red Slime": {
+    "name": "Elite Red Slime",
+    "image": "RedSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 11,
+    "agility": 5,
+    "hp": 6,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 2,
+    "gp": 3,
+    "ai": "attackOnly"
+  },
+  "Veteran Drakee": {
+    "name": "Veteran Drakee",
+    "image": "Drakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 11,
+    "agility": 8,
+    "hp": [
+      6,
+      8
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 2,
+    "gp": 2,
+    "ai": "attackOnly"
+  },
+  "Elite Drakee": {
+    "name": "Elite Drakee",
+    "image": "Drakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 14,
+    "agility": 10,
+    "hp": [
+      8,
+      10
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 3,
+    "gp": 3,
+    "ai": "attackOnly"
+  },
+  "Veteran Ghost": {
+    "name": "Veteran Ghost",
+    "image": "Ghost",
+    "damagedImage": "Ghost_damaged",
+    "str": 14,
+    "agility": 10,
+    "hp": [
+      8,
+      9
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 4,
+    "gp": [
+      4,
+      5
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Ghost": {
+    "name": "Elite Ghost",
+    "image": "Ghost",
+    "damagedImage": "Ghost_damaged",
+    "str": 18,
+    "agility": 13,
+    "hp": [
+      10,
+      11
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 5,
+    "gp": [
+      5,
+      6
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Magician": {
+    "name": "Veteran Magician",
+    "image": "Magician",
+    "damagedImage": "Magician_damaged",
+    "str": 14,
+    "agility": 15,
+    "hp": [
+      12,
+      16
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 5,
+    "gp": [
+      11,
+      14
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Elite Magician": {
+    "name": "Elite Magician",
+    "image": "Magician",
+    "damagedImage": "Magician_damaged",
+    "str": 18,
+    "agility": 19,
+    "hp": [
+      16,
+      21
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 6,
+    "gp": [
+      14,
+      18
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Veteran Magidrakee": {
+    "name": "Veteran Magidrakee",
+    "image": "Magidrakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 18,
+    "agility": 18,
+    "hp": [
+      15,
+      19
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 6,
+    "gp": [
+      11,
+      14
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Elite Magidrakee": {
+    "name": "Elite Magidrakee",
+    "image": "Magidrakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 22,
+    "agility": 22,
+    "hp": [
+      19,
+      24
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 8,
+    "gp": [
+      14,
+      18
+    ],
+    "ai": "halfHurtHalfAttack"
+  },
+  "Veteran Scorpion": {
+    "name": "Veteran Scorpion",
+    "image": "Scorpion",
+    "damagedImage": "Scorpion_damaged",
+    "str": 22,
+    "agility": 20,
+    "hp": [
+      20,
+      25
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 8,
+    "gp": [
+      15,
+      19
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Scorpion": {
+    "name": "Elite Scorpion",
+    "image": "Scorpion",
+    "damagedImage": "Scorpion_damaged",
+    "str": 29,
+    "agility": 26,
+    "hp": [
+      26,
+      32
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 10,
+    "gp": [
+      19,
+      24
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Druin": {
+    "name": "Veteran Druin",
+    "image": "Druin",
+    "damagedImage": "Druin_damaged",
+    "str": 25,
+    "agility": 22,
+    "hp": [
+      21,
+      28
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 9,
+    "gp": [
+      15,
+      19
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Druin": {
+    "name": "Elite Druin",
+    "image": "Druin",
+    "damagedImage": "Druin_damaged",
+    "str": 32,
+    "agility": 29,
+    "hp": [
+      27,
+      35
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 11,
+    "gp": [
+      19,
+      24
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Poltergeist": {
+    "name": "Veteran Poltergeist",
+    "image": "Poltergeist",
+    "damagedImage": "Ghost_damaged",
+    "str": 22,
+    "agility": 25,
+    "hp": [
+      22,
+      29
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 10,
+    "gp": [
+      16,
+      21
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Elite Poltergeist": {
+    "name": "Elite Poltergeist",
+    "image": "Poltergeist",
+    "damagedImage": "Ghost_damaged",
+    "str": 29,
+    "agility": 32,
+    "hp": [
+      29,
+      37
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 13,
+    "gp": [
+      21,
+      27
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Veteran Droll": {
+    "name": "Veteran Droll",
+    "image": "Droll",
+    "damagedImage": "Droll_damaged",
+    "str": 30,
+    "agility": 30,
+    "hp": [
+      24,
+      31
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 14,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 12,
+    "gp": [
+      22,
+      30
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Droll": {
+    "name": "Elite Droll",
+    "image": "Droll",
+    "damagedImage": "Droll_damaged",
+    "str": 38,
+    "agility": 38,
+    "hp": [
+      30,
+      40
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 14,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 16,
+    "gp": [
+      29,
+      38
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Drakeema": {
+    "name": "Veteran Drakeema",
+    "image": "Drakeema",
+    "damagedImage": "Drakee_damaged",
+    "str": 28,
+    "agility": 32,
+    "hp": [
+      20,
+      25
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 14,
+    "gp": [
+      19,
+      24
+    ],
+    "ai": "drakeemaAi"
+  },
+  "Elite Drakeema": {
+    "name": "Elite Drakeema",
+    "image": "Drakeema",
+    "damagedImage": "Drakee_damaged",
+    "str": 35,
+    "agility": 42,
+    "hp": [
+      26,
+      32
+    ],
+    "resist": {
+      "sleep": 2,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 6,
+    "xp": 18,
+    "gp": [
+      24,
+      30
+    ],
+    "ai": "drakeemaAi"
+  },
+  "Veteran Skeleton": {
+    "name": "Veteran Skeleton",
+    "image": "Skeleton",
+    "damagedImage": "Skeleton_damaged",
+    "str": 35,
+    "agility": 28,
+    "hp": [
+      29,
+      38
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 14,
+    "gp": [
+      28,
+      36
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Skeleton": {
+    "name": "Elite Skeleton",
+    "image": "Skeleton",
+    "damagedImage": "Skeleton_damaged",
+    "str": 45,
+    "agility": 35,
+    "hp": [
+      37,
+      48
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 18,
+    "gp": [
+      35,
+      46
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Warlock": {
+    "name": "Veteran Warlock",
+    "image": "Warlock",
+    "damagedImage": "Warlock_damaged",
+    "str": 35,
+    "agility": 28,
+    "hp": [
+      29,
+      38
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 16,
+    "gp": [
+      32,
+      42
+    ],
+    "ai": "25Sleep50Hurt25Attack"
+  },
+  "Elite Warlock": {
+    "name": "Elite Warlock",
+    "image": "Warlock",
+    "damagedImage": "Warlock_damaged",
+    "str": 45,
+    "agility": 35,
+    "hp": [
+      37,
+      48
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 21,
+    "gp": [
+      42,
+      54
+    ],
+    "ai": "25Sleep50Hurt25Attack"
+  },
+  "Veteran Metal Scorpion": {
+    "name": "Veteran Metal Scorpion",
+    "shortName": "Metal Scorp",
+    "image": "MetalScorpion",
+    "damagedImage": "MetalScorpion_damaged",
+    "str": 45,
+    "agility": 52,
+    "hp": [
+      21,
+      28
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 18,
+    "gp": [
+      38,
+      49
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Metal Scorpion": {
+    "name": "Elite Metal Scorpion",
+    "shortName": "Metal Scorp",
+    "image": "MetalScorpion",
+    "damagedImage": "MetalScorpion_damaged",
+    "str": 58,
+    "agility": 67,
+    "hp": [
+      27,
+      35
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 22,
+    "gp": [
+      48,
+      62
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Wolf": {
+    "name": "Veteran Wolf",
+    "image": "Wolf",
+    "damagedImage": "Wolf_damaged",
+    "str": 50,
+    "agility": 38,
+    "hp": [
+      32,
+      42
+    ],
+    "resist": {
+      "sleep": 1,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 20,
+    "gp": [
+      46,
+      61
+    ],
+    "ai": "attackOnly"
+  },
+  "Elite Wolf": {
+    "name": "Elite Wolf",
+    "image": "Wolf",
+    "damagedImage": "Wolf_damaged",
+    "str": 64,
+    "agility": 48,
+    "hp": [
+      42,
+      54
+    ],
+    "resist": {
+      "sleep": 1,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 26,
+    "gp": [
+      59,
+      78
+    ],
+    "ai": "attackOnly"
+  },
+  "Veteran Wraith": {
+    "name": "Veteran Wraith",
+    "image": "Wraith",
+    "damagedImage": "Wraith_damaged",
+    "str": 55,
+    "agility": 42,
+    "hp": [
+      35,
+      45
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 21,
+    "gp": [
+      56,
+      74
+    ],
+    "ai": "wraithAi"
+  },
+  "Elite Wraith": {
+    "name": "Elite Wraith",
+    "image": "Wraith",
+    "damagedImage": "Wraith_damaged",
+    "str": 70,
+    "agility": 54,
+    "hp": [
+      45,
+      58
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 27,
+    "gp": [
+      72,
+      94
+    ],
+    "ai": "wraithAi"
+  },
+  "Veteran Metal Slime": {
+    "name": "Veteran Metal Slime",
+    "image": "MetalSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 12,
+    "agility": 319,
+    "hp": 5,
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 1,
+    "xp": 144,
+    "gp": [
+      5,
+      6
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Elite Metal Slime": {
+    "name": "Elite Metal Slime",
+    "image": "MetalSlime",
+    "damagedImage": "Slime_damaged",
+    "str": 16,
+    "agility": 408,
+    "hp": 6,
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 15,
+      "hurt": 15
+    },
+    "dodge": 1,
+    "xp": 184,
+    "gp": [
+      6,
+      8
+    ],
+    "ai": "75Hurt25Attack"
+  },
+  "Veteran Specter": {
+    "name": "Veteran Specter",
+    "image": "Specter",
+    "damagedImage": "Specter_damaged",
+    "str": 50,
+    "agility": 48,
+    "hp": [
+      35,
+      45
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 22,
+    "gp": [
+      65,
+      86
+    ],
+    "ai": "specterAi"
+  },
+  "Elite Specter": {
+    "name": "Elite Specter",
+    "image": "Specter",
+    "damagedImage": "Specter_damaged",
+    "str": 64,
+    "agility": 61,
+    "hp": [
+      45,
+      58
+    ],
+    "resist": {
+      "sleep": 3,
+      "stopSpell": 1,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 29,
+    "gp": [
+      83,
+      110
+    ],
+    "ai": "specterAi"
+  },
+  "Veteran Wolflord": {
+    "name": "Veteran Wolflord",
+    "image": "Wolflord",
+    "damagedImage": "Wolflord_damaged",
+    "str": 62,
+    "agility": 45,
+    "hp": [
+      36,
+      48
+    ],
+    "resist": {
+      "sleep": 4,
+      "stopSpell": 7,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 25,
+    "gp": [
+      75,
+      99
+    ],
+    "ai": "stopSpellAi"
+  },
+  "Elite Wolflord": {
+    "name": "Elite Wolflord",
+    "image": "Wolflord",
+    "damagedImage": "Wolflord_damaged",
+    "str": 80,
+    "agility": 58,
+    "hp": [
+      46,
+      61
+    ],
+    "resist": {
+      "sleep": 4,
+      "stopSpell": 7,
+      "hurt": 0
+    },
+    "dodge": 2,
+    "xp": 32,
+    "gp": [
+      96,
+      126
+    ],
+    "ai": "stopSpellAi"
+  },
+  "Veteran Druinlord": {
+    "name": "Veteran Druinlord",
+    "image": "Druinlord",
+    "damagedImage": "Druinlord_damaged",
+    "str": 59,
+    "agility": 50,
+    "hp": [
+      34,
+      44
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 25,
+    "gp": [
+      79,
+      105
+    ],
+    "ai": "druinlordAi"
+  },
+  "Elite Druinlord": {
+    "name": "Elite Druinlord",
+    "image": "Druinlord",
+    "damagedImage": "Druinlord_damaged",
+    "str": 75,
+    "agility": 64,
+    "hp": [
+      43,
+      56
+    ],
+    "resist": {
+      "sleep": 15,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 32,
+    "gp": [
+      101,
+      134
+    ],
+    "ai": "druinlordAi"
+  },
+  "Mire Slime": {
+    "name": "Mire Slime",
+    "image": "Slime",
+    "damagedImage": "Slime_damaged",
+    "str": 6,
+    "agility": 3,
+    "hp": 6,
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 1,
+    "gp": 1,
+    "ai": "attackOnly"
+  },
+  "Ash Drakee": {
+    "name": "Ash Drakee",
+    "image": "Drakee",
+    "damagedImage": "Drakee_damaged",
+    "str": 16,
+    "agility": 8,
+    "hp": [
+      12,
+      14
+    ],
+    "resist": {
+      "sleep": 0,
+      "stopSpell": 15,
+      "hurt": 0
+    },
+    "dodge": 1,
+    "xp": 4,
+    "gp": 4,
+    "ai": "attackOnly"
+  },
+  "Frost Wraith": {
+    "name": "Frost Wraith",
+    "image": "Wraith",
+    "damagedImage": "Wraith_damaged",
+    "str": 88,
+    "agility": 54,
+    "hp": [
+      78,
+      101
+    ],
+    "resist": {
+      "sleep": 7,
+      "stopSpell": 0,
+      "hurt": 0
+    },
+    "dodge": 4,
+    "xp": 36,
+    "gp": [
+      94,
+      124
+    ],
+    "ai": "wraithAi"
+  }
+}

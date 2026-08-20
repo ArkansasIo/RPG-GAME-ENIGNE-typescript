@@ -1,0 +1,70 @@
+[
+  [
+    "Slime",
+    "RedSlime"
+  ],
+  [
+    "Slime",
+    "RedSlime",
+    "Drakee"
+  ],
+  [
+    "Slime",
+    "RedSlime",
+    "Drakee",
+    "Ghost"
+  ],
+  [
+    "RedSlime",
+    "Drakee",
+    "Ghost",
+    "Magician"
+  ],
+  [
+    "Ghost",
+    "Magician",
+    "Magidrakee",
+    "Scorpion"
+  ],
+  [
+    "Ghost",
+    "Magician",
+    "Magidrakee",
+    "Scorpion",
+    "Skeleton"
+  ],
+  [
+    "Magidrakee",
+    "Scorpion",
+    "Skeleton",
+    "Warlock",
+    "Wolf"
+  ],
+  [
+    "Skeleton",
+    "Warlock",
+    "Wolf",
+    "MetalScorpion"
+  ],
+  [
+    "Goblin Scout",
+    "Dire Wolf",
+    "Wolf"
+  ],
+  [
+    "Goblin Scout",
+    "Dire Wolf",
+    "Stone Golem",
+    "Ember Elemental"
+  ],
+  [
+    "Stone Golem",
+    "Ember Elemental",
+    "Young Green Dragon"
+  ],
+  [
+    "Young Green Dragon",
+    "Lich of the Deep",
+    "Dragonlord"
+  ]
+]

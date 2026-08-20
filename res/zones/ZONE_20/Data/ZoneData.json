@@ -1,0 +1,19 @@
+{
+  "zoneId": 20,
+  "zoneCode": "ZONE_20",
+  "zoneName": "Dragonspire Peaks",
+  "biomeFamilyId": "mountains",
+  "progressionBandId": "northern-wilderness",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_20/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_20/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_20/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_20/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_20/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_20/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_20/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_20/Data/MusicData.json"
+  }
+}

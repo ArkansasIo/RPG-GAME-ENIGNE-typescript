@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "sourceSheets": [
+    {
+      "id": "dw-master-monsters-npcs-sheet",
+      "path": "res/assets/dw-master-monsters-npcs-sheet.png",
+      "purpose": "Source reference for enemy, NPC, UI, and effect art.",
+      "feeds": [
+        "res/monsters.png",
+        "res/npcs.png",
+        "res/battle_backgrounds.png"
+      ]
+    },
+    {
+      "id": "dw-master-weapons-armor-items-sheet",
+      "path": "res/assets/dw-master-weapons-armor-items-sheet.png",
+      "purpose": "Source reference for item, weapon, armor, accessory, and utility icons.",
+      "feeds": [
+        "res/sheets/weapons_16x16.png",
+        "res/sheets/armor_16x16.png",
+        "res/sheets/accessories_16x16.png",
+        "res/sheets/adventure-world_16x16.png"
+      ]
+    },
+    {
+      "id": "dw-master-world-tiles-sheet",
+      "path": "res/assets/dw-master-world-tiles-sheet.png",
+      "purpose": "Source reference for terrain, dungeon, town, and overworld tile art.",
+      "feeds": [
+        "res/tiles.png",
+        "res/maps/tileset_tiles.json"
+      ]
+    }
+  ]
+}

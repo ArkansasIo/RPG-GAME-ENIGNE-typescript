@@ -1,0 +1,19 @@
+{
+  "zoneId": 61,
+  "zoneCode": "ZONE_61",
+  "zoneName": "Crystal Caverns",
+  "biomeFamilyId": "underground",
+  "progressionBandId": "deep-underground",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_61/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_61/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_61/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_61/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_61/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_61/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_61/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_61/Data/MusicData.json"
+  }
+}

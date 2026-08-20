@@ -1,0 +1,19 @@
+{
+  "zoneId": 21,
+  "zoneCode": "ZONE_21",
+  "zoneName": "Giants' Crown",
+  "biomeFamilyId": "mountains",
+  "progressionBandId": "northern-wilderness",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_21/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_21/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_21/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_21/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_21/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_21/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_21/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_21/Data/MusicData.json"
+  }
+}

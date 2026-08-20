@@ -1,0 +1,19 @@
+{
+  "zoneId": 46,
+  "zoneCode": "ZONE_46",
+  "zoneName": "Frozen Dragonlands",
+  "biomeFamilyId": "frozen-regions",
+  "progressionBandId": "frozen-north",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_46/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_46/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_46/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_46/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_46/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_46/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_46/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_46/Data/MusicData.json"
+  }
+}

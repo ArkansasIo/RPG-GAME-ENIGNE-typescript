@@ -1,0 +1,19 @@
+{
+  "zoneId": 41,
+  "zoneCode": "ZONE_41",
+  "zoneName": "Frostholm Tundra",
+  "biomeFamilyId": "frozen-regions",
+  "progressionBandId": "frozen-north",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_41/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_41/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_41/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_41/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_41/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_41/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_41/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_41/Data/MusicData.json"
+  }
+}

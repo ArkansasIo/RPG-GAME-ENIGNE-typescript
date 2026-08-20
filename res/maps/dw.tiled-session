@@ -1,0 +1,249 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tantegelCastle.json",
+    "automapping.whileDrawing": false,
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "brecconary.js": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 312.5,
+                "y": 319
+            }
+        },
+        "brecconary.json": {
+            "expandedObjectLayers": [
+                6,
+                5,
+                4
+            ],
+            "scale": 1.7798,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 206.48387459265084,
+                "y": 125.8568378469491
+            }
+        },
+        "brecconary.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 312.5,
+                "y": 304
+            }
+        },
+        "collision_tiles.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "enemy_territory_tiles.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "erdricksCave1.json": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 159.5,
+                "y": 160
+            }
+        },
+        "erdricksCave1.json#collision": {
+            "scaleInDock": 1
+        },
+        "erdricksCave1.json#tiles": {
+            "scaleInDock": 1
+        },
+        "erdricksCave1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 161.5,
+                "y": 160
+            }
+        },
+        "erdricksCave1.tmx#collision": {
+            "scaleInDock": 1
+        },
+        "erdricksCave1.tmx#tiles": {
+            "scaleInDock": 1
+        },
+        "erdricksCave2.json": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 244.5,
+                "y": 227
+            }
+        },
+        "erdricksCave2.json#collision": {
+            "scaleInDock": 1
+        },
+        "erdricksCave2.json#tiles": {
+            "scaleInDock": 1
+        },
+        "erdricksCave2.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 161,
+                "y": 160
+            }
+        },
+        "erdricksCave2.tmx#collision": {
+            "scaleInDock": 1
+        },
+        "erdricksCave2.tmx#tiles": {
+            "scaleInDock": 1
+        },
+        "garinham.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.4498,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 235.54973099737896,
+                "y": 206.9250931162919
+            }
+        },
+        "garinham.json#collision": {
+            "scaleInDock": 1
+        },
+        "garinham.json#tiles": {
+            "scaleInDock": 1
+        },
+        "garinham.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 233,
+                "y": 224
+            }
+        },
+        "garinham.tmx#collision": {
+            "scaleInDock": 1
+        },
+        "garinham.tmx#tiles": {
+            "scaleInDock": 1
+        },
+        "kol.json": {
+            "expandedObjectLayers": [
+                3,
+                4
+            ],
+            "scale": 2.466,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 107.66423357664235,
+                "y": 314.27412814274123
+            }
+        },
+        "overworld.json": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1.7855,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 775.4130495659479,
+                "y": 830.0196023522822
+            }
+        },
+        "overworld.json#territories": {
+            "scaleInDock": 1
+        },
+        "overworld.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 799,
+                "y": 800
+            }
+        },
+        "overworld.tmx#territories": {
+            "scaleInDock": 1
+        },
+        "tantegelCastle.json": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 2.0892,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 225.2058204097262,
+                "y": 345.5868274937775
+            }
+        },
+        "tantegelCastle.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 481,
+                "y": 544
+            }
+        },
+        "tantegelCastleUpstairs.json": {
+            "scale": 0.8245,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 308.67192237719826,
+                "y": 194.05700424499696
+            }
+        },
+        "tileset_tiles.json": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "D:/dev/htmlgames/dw/src/res/maps",
+    "last.externalTilesetPath": "D:/dev/htmlgames/dw/src/res/maps",
+    "map.height": 60,
+    "map.lastUsedExportFilter": "JSON map files (*.json)",
+    "map.lastUsedFormat": "json",
+    "map.orientation": "1",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 60,
+    "openFiles": [
+        "tantegelCastleUpstairs.json",
+        "tantegelCastle.json",
+        "brecconary.json",
+        "garinham.json",
+        "collision_tiles.json",
+        "enemy_territory_tiles.json",
+        "erdricksCave1.json",
+        "erdricksCave2.json"
+    ],
+    "project": "dw.tiled-project",
+    "recentFiles": [
+        "kol.json",
+        "collision_tiles.json",
+        "overworld.json",
+        "tantegelCastleUpstairs.json",
+        "erdricksCave2.json",
+        "erdricksCave1.json",
+        "enemy_territory_tiles.json",
+        "garinham.json",
+        "brecconary.json",
+        "tantegelCastle.json",
+        "tileset_tiles.json",
+        "erdricksCave1.tmx"
+    ],
+    "textEdit.monospace": true,
+    "tileset.lastUsedFormat": "json",
+    "tileset.margin": 0,
+    "tileset.spacing": 0,
+    "tileset.transparentColor": "#ff00ff",
+    "tileset.useTransparentColor": false
+}

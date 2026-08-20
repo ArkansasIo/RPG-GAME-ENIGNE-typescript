@@ -1,0 +1,19 @@
+{
+  "zoneId": 11,
+  "zoneCode": "ZONE_11",
+  "zoneName": "Thornveil Forest",
+  "biomeFamilyId": "forests",
+  "progressionBandId": "beginner-kingdom",
+  "mapPackage": {
+    "overworld": "res/zones/ZONE_11/Map/Overworld.json",
+    "interiors": "res/zones/ZONE_11/Map/Interiors.json",
+    "dungeon": "res/zones/ZONE_11/Map/Dungeon.json",
+    "battleAreas": "res/zones/ZONE_11/Map/BattleAreas.json"
+  },
+  "links": {
+    "encounterTable": "res/zones/ZONE_11/Data/EncounterTable.json",
+    "lootTable": "res/zones/ZONE_11/Data/LootTable.json",
+    "npcData": "res/zones/ZONE_11/Data/NPCData.json",
+    "musicData": "res/zones/ZONE_11/Data/MusicData.json"
+  }
+}
